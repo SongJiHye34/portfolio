@@ -1,0 +1,517 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/THE_GONJURING.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Korea';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+
+.main {
+  width: 100%;
+  max-width: 1700px;
+  height: 1600px;
+  margin: 0 auto;
+}
+
+.main .header {
+  width: 1200px;
+  height: 100px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  right: 80px;
+
+}
+
+/*-----------------------
+          메뉴토글
+--------------------------*/
+
+
+
+/* 오버레이 */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* 사이드 메뉴 */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+#sideMenu ul {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sideMenu.active {
+  right: 0;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#menuBtn {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#closeBtn {
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 770px) {
+  .header .menu {
+    display: none;
+  }
+
+  .header {
+    width: 900px !important;
+    height: 100px;
+  }
+
+  #menuBtn {
+    font-size: 70px;
+  }
+
+  #sideMenu {
+    width: 100%;
+    right: -100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  #sideMenu.active {
+    right: 0;
+  }
+
+  #closeBtn {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 20;
+    color: #111;
+    font-size: 60px;
+  }
+
+  #sideMenu ul {
+  margin: 180px 400px 0 0;
+  gap: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center; 
+  }
+  .morph-button{
+    width: 500px !important;
+    font-size: 1.8rem !important;
+    height: 200px !important;
+  }
+  .from{
+     min-width: 1000px !important;
+      display: flex;
+      gap: 180px  !important;
+      height: auto !important;
+  flex-direction: column;
+  }
+  .profile{
+    margin-top: 30px;
+    min-width: 1000px !important;
+
+  }
+  .profile >div{
+    flex: 0.3px !important;
+    padding: 0 5px !important;
+  }
+  .bottom-text-box{
+    width: 1000px !important;
+  }
+
+  .swiper-pagination{ 
+  bottom: 80px !important;
+  width: 1000px !important;
+
+  }
+}
+
+/**/
+.main .header ul li {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: 138px;
+  height: 30px;
+}
+
+.main .header ul li a {
+  color: #000000;
+  font-size: 13px;
+
+}
+
+.main .header ul li:hover a {
+  color: #fff;
+}
+
+#sideMenu ul li {
+  height: 100px;
+}
+
+.morph-button {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.morph-button svg.morph path {
+  pointer-events: none;
+}
+
+.morph-button span {
+  position: relative;
+}
+
+.morph-button svg.morph {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  fill: #4A6FA5;
+  transition: fill 0.2s ease;
+}
+
+.morph-button:hover svg.morph {
+  fill: #3B82F6;
+}
+
+
+/**/
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bn38:hover {
+  background-color: #60605e;
+}
+
+/**/
+
+.from {
+  position: relative;
+  min-width: 1400px;
+  max-width: 1720px;
+  height: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 80px;
+  height: 300px;
+
+}
+
+.text>ul {
+  flex: 1;
+  align-items: center;
+
+}
+
+.text>ul:last-child {
+  border-bottom: none;
+  display: flex;
+}
+
+.text>ul>li {
+  flex: none;
+  line-height: 25px;
+}
+
+
+.img {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.img div {
+  width: 100%;
+  height: 100%;
+}
+
+.img div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scrollHint {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  animation: scrollHint 0.8s ease;
+}
+
+/*------------------------
+           프로필   
+--------------------------*/
+
+
+.profile {
+  padding-top: 35px;
+  position: relative;
+  min-width: 1200px;
+  max-width: 1720px;
+  height: 350px;
+  display: flex;
+  background-color: #F2F1EF;
+
+}
+
+.profile>div {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.pf {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+
+
+.pf td {
+  padding: 20px 12px;
+  vertical-align: middle;
+}
+
+.pf td:first-child {
+  width: 98px;
+  color: #777;
+  font-weight: 600;
+}
+
+.pf td:last-child {
+  color: #222;
+}
+
+.c-item dl dd,
+.b-item dl dd {
+  line-height: 28px;
+}
+
+/*--------------
+    스와이퍼 텍스트 박스
+----------------*/
+.bottom-text-box {
+  position: absolute;
+  left: 0;
+  bottom: -320px;
+  z-index: 10;
+  background-color: #1e1e1e;
+  height: 90px;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.bottom-text-box.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/*스와이퍼*/
+.item {
+  position: relative;
+  min-width: 1400px;
+  max-width: 1720px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin: 100px 0 0 0;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.5s ease;
+}
+
+.swiper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #333;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*스와이퍼*/
+
+.mySwiper {
+  position: relative;
+}
+
+
+.mySwiper .swiper-pagination {
+  position: absolute !important;
+  top: 40px;
+  bottom: auto !important;
+  left: 50%;
+  z-index: 10;
+}
+
+
+.mySwiper .swiper-pagination.swiper-pagination-horizontal {
+  width: 100%;
+  text-align: center;
+}
+
+
+.mySwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #888;
+  opacity: 70%;
+}
+
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+/*스와이퍼*/

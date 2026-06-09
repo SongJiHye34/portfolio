@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스킬</title>
+    <link rel="icon" href="img/mark.jpg">
+    <link rel="stylesheet" href="css/skills2026.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/skills2026.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="header-menu">
+                <li><a href="Aboutme2026.html" class="bn3637 bn38">About me</a></li>
+                <li><a href="portfolio2026.html" class="bn3637 bn38">Portfolio</a></li>
+                <li><a href="design2026.html" class="bn3637 bn38">Design</a></li>
+                <li><a href="skills2026.html" class="bn3637 bn38">Skills</a></li>
+                <li><a href="contact2026.html" class="bn3637 bn38">content</a></li>
+            </ul>
+            <button id="menuBtn">+</button>
+
+            <div id="overlay"></div>
+        </div>
+        <div id="sideMenu" class="side-menu">
+            <button id="closeBtn">×</button>
+            <ul>
+                <li><a href="home2026.html" class="morph-button">
+                        <button id="morphBtnhome" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnhome.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnhome.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>HOME </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="Aboutme2026.html" class="morph-button">
+                        <button id="morphBtnAbout" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>ABOUT ME </span>
+                        </button>
+                    </a>
+                </li>
+
+                <li><a href="portfolio2026.html" class="morph-button">
+                        <button id="morphBtnportfolio" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>PORTFOLIO </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="design2026.html" class="morph-button">
+                        <button id="morphBtnDesign" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>DESIGN </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="skills2026.html" class="morph-button">
+
+                        <button id="morphBtnSkills" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>SKILLS </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="contact2026.html" class="morph-button">
+                        <button id="morphBtnContact" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>CONTACT</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="title">
+                <div class="text">
+                    <ul style="position: relative; margin: 0 0 30px 0;">
+                        <li style="display: block; font-size: 20px; font-weight: bold; font-family: 'Korea';"> ● Skills
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+                                숙련도를 나타내는 그래프입니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chart-wrap">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div class="item">
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Html
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Css
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    JavaScript
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Photoshop
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Illustrator
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Figma
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="bar">
+                        <ul class="text-item">
+                            <li>
+                                <p>
+                                    Office
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="bar-item">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Team">
+                <dl>
+                    <dt>TOOL LIST</dt>
+                    <dd>
+                        <div class="line"></div>
+                    </dd>
+                    <dd>
+                        <em>1</em> Adobe Photoshop
+                    </dd>
+                    <dd>
+                        <em>2</em> Adobe Illustrator
+                    </dd>
+                    <dd>
+                        <em>3</em> Html
+                    </dd>
+                    <dd>
+                        <em>4</em> Css
+                    </dd>
+                    <dd>
+                        <em>5</em> Figma
+                    </dd>
+                    <dd>
+                        <em>6</em> Office *Excel, PPT
+                    </dd>
+                    <dd>
+                        <em>7</em> JavaScript
+                    </dd>
+                </dl>
+                <br>
+                <dl>
+                    <dd style="font-size: 14px; line-height: 20px;">
+                        위에 제시된 순위는 숙련도를 기준으로
+                        참고용으로 임의 분류한 것입니다.
+                    </dd>
+                </dl>
+                <ul>
+                    <li>
+                       LAST UPDATE
+                    </li>
+                    <li>
+                       2026. 05
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

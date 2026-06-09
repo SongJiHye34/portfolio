@@ -1,0 +1,723 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* helpful for predictable sizing */
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../Font/Pretendard-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Korea';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  /* ensures body fills viewport */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.main {
+  width: 100%;
+  max-width: 1700px;
+  min-height: 800px;
+  /* use min-height instead of fixed height */
+  margin: 0 auto;
+}
+
+.main .header {
+  width: 1400px;
+  height: 70px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  background-color: #fff;
+
+}
+
+.header-menu {
+  width: 700px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-left: 320px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-menu li {
+
+  height: 30px;
+}
+
+.header-menu li a {
+  color: #000;
+  font-size: 13px;
+}
+
+/*-----------------------
+          메뉴토글
+--------------------------*/
+
+
+
+/* 오버레이 */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* 사이드 메뉴 */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  transition: 0.3s;
+  z-index: 500;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu ul {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.side-menu ul li {
+  height: 70px;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 400;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 사이드 메뉴 */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  transition: right 0.35s ease;
+  z-index: 500;
+}
+
+#sideMenu.active {
+  right: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+#menuBtn {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111;
+}
+
+
+#closeBtn {
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+
+#sideMenu ul {
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#sideMenu li {
+  height: 60px;
+}
+
+
+
+/**/
+.main .header ul li {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: 138px;
+  height: 30px;
+}
+
+.header-menu li a {
+  color: #000000;
+  font-size: 13px;
+
+}
+
+.header-menu li:hover a {
+  color: #fff;
+}
+
+#sideMenu ul li {
+  height: 70px;
+}
+
+.morph-button {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.morph-button svg.morph path {
+  pointer-events: none;
+}
+
+.morph-button span {
+  position: relative;
+}
+
+.morph-button svg.morph {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  fill: #4A6FA5;
+  transition: fill 0.2s ease;
+}
+
+.morph-button:hover svg.morph {
+  fill: #3B82F6;
+}
+
+@media (max-width: 770px) {
+  .main {
+    min-width: 770px !important;
+    width: 100%;
+    height: 1300px !important;
+    min-height: 800px;
+
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .text ul,
+  .text li,
+  .text h2,
+  .text p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .text>ul:last-child {
+    width: 300px;
+  }
+
+  .text>ul:last-child>li {
+    width: 120px !important;
+    align-self: stretch;
+  }
+
+  .text>ul>li.with-border {
+    font-size: 10px;
+    min-width: 120px !important;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header {
+    width: 700px !important;
+    min-width: 0 !important;
+  }
+
+  #menuBtn {
+    width: 600px !important;
+    min-width: 0;
+  }
+
+  .background {
+    display: none;
+  }
+
+  #sideMenu {
+    width: 780px !important;
+    right: -150%;
+    padding: 10px;
+    height: 100vh !important;
+    box-sizing: border-box;
+
+  }
+
+  body.menu-open {
+    overflow: hidden;
+
+
+  }
+
+  #sideMenu.active {
+    right: 0;
+    height: 100vh !important;
+
+  }
+
+  #closeBtn {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 20;
+    color: #111;
+    font-size: 20px;
+  }
+
+  #sideMenu ul {
+    gap: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #sideMenu ul li {
+    position: relative;
+    width: 100%;
+    height: 50px !important;
+  }
+
+  .morph-button {
+    width: 200px !important;
+    height: 70px !important;
+    position: relative;
+    display: flex;
+    left: 10px !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem !important;
+    text-align: center;
+  }
+
+  .morph-button span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    text-align: center;
+  }
+
+  .morph-button svg.morph {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .img {
+    justify-content: flex-start !important;
+  }
+
+  .img ul {
+    overflow: hidden;
+    width: 400px !important;
+  }
+
+  .content {
+    position: relative;
+    width: 700px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 40px !important;
+    height: auto !important;
+    margin: 30px !important;
+  }
+
+  .text {
+    position: static !important;
+    align-items: flex-start;
+    height: auto !important;
+  }
+
+  .text ul {
+    height: auto !important;
+  }
+
+  .text ul:nth-child(1) li {
+    font-size: 10px !important;
+  }
+
+  .text ul:last-child li {
+    width: auto !important;
+  }
+
+  .text ul li p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+
+  .chart-wrap {
+    margin-left: 0px !important;
+    width: 300px !important;
+  }
+
+  .item .bar:nth-child(5) {
+    border-right: 1px solid #000 !important;
+  }
+
+  .item {
+    left: 0 !important;
+    display: grid;
+    width: auto !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .item .bar {
+    height: auto !important;
+  }
+
+  .appeal {
+    position: relative;
+    height: auto !important;
+    width: 600px !important;
+    display: flex;
+    margin: 30px !important;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px !important;
+  }
+
+
+
+  .last-content {
+    height: 60px !important;
+  }
+
+  .last-content ul {
+    overflow: hidden;
+    width: 400px !important;
+    margin: 0 !important;
+    gap: 0 !important;
+  }
+
+}
+
+
+/**/
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bn38:hover {
+  background-color: #60605e;
+}
+
+
+
+
+/*텍스트*/
+.typo ul li p {
+  font-family: 'MyFont';
+  letter-spacing: -0.01em;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* 전체 영역 */
+.story {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: auto;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 왼쪽 텍스트 */
+.story .typo {
+  width: 40%;
+
+  text-align: center;
+}
+
+/* 문제점/해결방향 박스 */
+.story .problem {
+  width: 100%;
+}
+
+.story .problem dl {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.story .problem dl:last-child{
+  padding-top: 20px;
+}
+.story .problem dt {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.story .problem dd {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/*  이미지 영역 */
+.circle-wrap {
+  width: 50%;
+  height: 500px;
+  position: relative;
+  margin-top: 50px;
+}
+
+
+.img-box {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  animation: float 5s ease-in-out infinite;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.img1 {
+  position: absolute;
+
+  top: 50px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.img2 {
+  position: absolute;
+
+  bottom: 40px;
+  left: 60px;
+}
+
+.img3 {
+  position: absolute;
+
+  bottom: 40px;
+  left: 300px;
+}
+
+/* 애니메이션 */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* 수정사항 */
+/*작업내역*/
+.view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.view h1 {
+  background-color: #111;
+  padding-top: 13px;
+  width: 100px;
+  text-align: center;
+  font-size: 19px;
+  color: #fff;
+  height: 60px;
+  font-weight: 300;
+  border-radius: 30px;
+  position: absolute;
+  left: 90px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.view .item {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 120px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.view .item ul {
+  width: 100%;
+}
+
+
+
+
+
+.view .item ul li:last-child {
+  flex: 3;
+  box-sizing: border-box;
+}
+
+.view .item ul li p {
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+
+.view .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*작업내역*/
+/*버튼*/
+#topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+  /* 처음엔 숨김 */
+  z-index: 1000;
+}
+
+#topBtn:hover {
+  background: #555;
+}

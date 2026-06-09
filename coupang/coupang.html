@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/coupang.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/coupang.js"></script>
+</head>
+
+<body>
+    <div class="line-banner">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/line-img1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/line-img2.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-header">
+        <div class="top-inner">
+
+            <div class="top-left">
+                <a href="#">즐겨찾기</a>
+
+                <div class="dropdown">
+                    <a href="#">
+                        입점신청 ▼
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">오픈마켓</a></li>
+                        <li><a href="#">여행·티켓</a></li>
+                        <li><a href="#">로켓배송</a></li>
+                        <li><a href="#">제휴마케팅</a></li>
+                        <li><a href="#">로켓그로스</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top-right">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+
+                <div class="dropdown">
+                    <a href="#">
+                        고객센터
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">자주묻는 질문</a></li>
+                        <li><a href="#">1:1 채팅문의</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">취소 / 반품 안내</a></li>
+                    </ul>
+                </div>
+
+                <a href="#">판매자 가입</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="header-menu">
+
+        <!-- 왼쪽 카테고리 -->
+        <div class="category-wrap">
+            <div class="category-btn">
+                <span class="material-symbols-outlined menu-icon">
+                    menu
+                </span>
+
+                <p>카테고리</p>
+
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">패션의류/잡화</a></li>
+                        <li><a href="#">뷰티</a></li>
+                        <li><a href="#">출산/유아동</a></li>
+                        <li><a href="#">식품</a></li>
+                        <li><a href="#">주방용품</a></li>
+                        <li><a href="#">생활용품</a></li>
+                        <li><a href="#">홈인테리어</a></li>
+                        <li><a href="#">가전디지털</a></li>
+                        <li><a href="#">스포츠/레저</a></li>
+                        <li><a href="#">자동차용품</a></li>
+                        <li><a href="#">도서/음반/DVD</a></li>
+                        <li><a href="#">완구/취미</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 오른쪽 영역 -->
+        <div class="right-area">
+
+            <!-- 검색 헤더 -->
+            <header class="header">
+                <div class="inner">
+
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="img/coupang-logo.jpg" alt="">
+                        </a>
+                    </h1>
+
+                    <div class="search-box">
+                        <select>
+                            <option>전체</option>
+                        </select>
+
+                        <input type="text" placeholder="찾고 싶은 상품을 검색해보세요!">
+
+                        <button>
+                            <span class="material-symbols-outlined">
+                                search
+                            </span>
+                        </button>
+                    </div>
+                    <div class="icon-box my-menu">
+
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                            <p>마이쿠팡</p>
+                        </a>
+
+                        <div class="mypage-menu">
+                            <ul>
+                                <li><a href="#">주문목록</a></li>
+                                <li><a href="#">취소/반품</a></li>
+                                <li><a href="#">찜 리스트</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="icon-box cart-menu">
+
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                            <p>장바구니</p>
+                        </a>
+
+                        <div class="cart-popup" style="font-size: 12px;">
+                            장바구니에 담긴 상품이 없습니다.
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- 서비스 메뉴 -->
+            <div class="service-slide">
+
+                <button class="service-prev">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </button>
+                <div class="service-view">
+                    <ul class="service-list page1">
+                        <li><a href="#"><img src="img/taxt01.jpg" alt="textlogo">쿠팡플레이</a></li>
+                        <li><a href="#"><img src="img/taxt02.jpg" alt="textlogo">로켓배송</a></li>
+                        <li><a href="#"><img src="img/taxt03.jpg" alt="textlogo">로켓프레시</a></li>
+                        <li><a href="#"><img src="img/taxt04.jpg" alt="textlogo">다시구매</a></li>
+                        <li><a href="#"><img src="img/taxt05.jpg" alt="textlogo">쿠팡비즈</a></li>
+                        <li><a href="#"><img src="img/taxt06.jpg" alt="textlogo">로켓직구</a></li>
+                        <li><a href="#"><img src="img/taxt07.jpg" alt="textlogo">골드박스</a></li>
+                        <li><a href="#"><img src="img/taxt08.jpg" alt="textlogo">이달의신상</a></li>
+                        <li><a href="#"><img src="img/taxt09.jpg" alt="textlogo">판매자특가</a></li>
+                    </ul>
+                    <ul class="service-list page2">
+                        <li><a href="#"><img src="img/taxt10.jpg" alt="textlogo">와우회원할인</a></li>
+                        <li><a href="#"><img src="img/taxt11.jpg" alt="textlogo">이벤트/쿠폰</a></li>
+                        <li><a href="#"><img src="img/taxt12.jpg" alt="textlogo">반품마켓</a></li>
+                        <li><a href="#"><img src="img/taxt13.jpg" alt="textlogo">착한상점</a></li>
+                        <li><a href="#"><img src="img/taxt14.jpg" alt="textlogo">기획전</a></li>
+                        <li><a href="#"><img src="img/taxt15.jpg" alt="textlogo">쿠팡트래블</a></li>
+                        <li><a href="#"><img src="img/taxt16.jpg" alt="textlogo">입점신청</a></li>
+
+                    </ul>
+                </div>
+                <button class="service-next">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="warp">
+        <div class="slide-benner">
+            <div class="slide">
+                <ul>
+                    <li><a href="#"><img src="img/pageimg1.jpg" alt="슬라이드"></a></li>
+                    <li><a href="#"><img src="img/pageimg2.jpg" alt="슬라이드"></a></li>
+                    <li><a href="#"><img src="img/pageimg3.jpg" alt="슬라이드"></a></li>
+                    <li><a href="#"><img src="img/pageimg4.jpg" alt="슬라이드"></a></li>
+                    <li><a href="#"><img src="img/pageimg5.jpg" alt="슬라이드"></a></li>
+                    <li><a href="#"><img src="img/pageimg6.jpg" alt="슬라이드"></a></li>
+                </ul>
+                <div class="slide-menu">
+                    <ul>
+                        <li><a href="#"><img src="img/slideimg1.jpg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/slideimg2.jpg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/slideimg3.jpg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/slideimg4.jpg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/slideimg5.jpg" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="img/slideimg6.jpg" alt="메뉴"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+
+        <div class="category">
+            <div class="title">
+                <ul>
+                    <li>
+                        <strong style="font-size: 24px; font-family: 'Korea'; font-weight: bold;">오늘의 발견</strong>
+                    </li>
+                    <li>
+                        <p style="font-size: 20px; color: #787878; font-family: none;"> │ 오늘 쿠팡이 엄선한가장 HOT한 상품!</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="category-item">
+                <div class="top">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/category-img1.jpg" alt="c">
+                            </a>
+                            <div class="buy-btn">
+                                <span class="buy-text">구매하기</span>
+                                <span class="arrow">></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/category-img2.jpg" alt="c">
+                            </a>
+                            <div class="buy-btn">
+                                <span class="buy-text">구매하기</span>
+                                <span class="arrow">></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="middle">
+                    <div id="middle-box">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/category-img3.jpg" alt="c">
+                                </a>
+                                <div class="buy-btn">
+                                    <span class="buy-text">구매하기</span>
+                                    <span class="arrow">></span>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/category-img4.jpg" alt="c">
+                                </a>
+                                <div class="buy-btn">
+                                    <span class="buy-text">구매하기</span>
+                                    <span class="arrow">></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="middle-box">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/category-img5.jpg" alt="c">
+                                </a>
+                                <div class="buy-btn">
+                                    <span class="buy-text">구매하기</span>
+                                    <span class="arrow">></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/category-img6.jpg" alt="c">
+                                </a>
+                                <div class="buy-btn">
+                                    <span class="buy-text">구매하기</span>
+                                    <span class="arrow">></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="under">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/category-img7.jpg" alt="c">
+                            </a>
+                            <div class="buy-btn">
+                                <span class="buy-text">구매하기</span>
+                                <span class="arrow">></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/category-img8.jpg" alt="c">
+                                <div class="buy-btn">
+                                    <span class="buy-text">구매하기</span>
+                                    <span class="arrow">></span>
+                                </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/category-img9.jpg" alt="c">
+                            </a>
+                            <div class="buy-btn">
+                                <span class="buy-text">구매하기</span>
+                                <span class="arrow">></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="quick-banner">
+
+            <a href="#">
+                <img src="img/banner1.jpg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="img/banner2.jpg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="img/banner3.jpg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="img/banner4.jpg" alt="">
+            </a>
+
+            <a href="#">
+                <img src="img/banner5.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/banner6.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="img/banner7.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="hotdeal">
+        <section class="product-slide">
+
+            <div class="title" style="display: flex; gap: 5px;">
+                <img src="img/bag1.png" alt="bag" style="width: 30px; object-fit: contain;">
+                <h2>이상품을 놓치지마세요</h2>
+                <div style="flex: 1; display: flex; justify-content: flex-end; gap: 2px;">
+                    <span style="font-size: 12px; font-weight: 500; color: #7c7c7c;">광고</span>
+                    <span class="material-symbols-outlined"
+                        style="position: relative; top: 2px; font-size: 12px; font-weight: 500; color: #7c7c7c;">
+                        error
+                    </span>
+                </div>
+            </div>
+
+            <div class="swiper productSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- 상품 1 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal1.jpg" alt="">
+                            <p class="name">몬스터에너지 울트라 음료 355ml, 48개</p>
+                            <p class="sale">지금 27% 할인 중</p>
+                            <p class="delivery">🚀 내일 도착 보장</p>
+                            <p class="star">★★★★★ <span>(32,434)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 2 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal2.jpg" alt="">
+                            <p class="name">컴집 게이밍컴퓨터 컴퓨터본체 GTA6 배틀그라운드 디아볼로4 롤 오버워···</p>
+                            <p class="sale">지금 28% 할인 중</p>
+                            <p class="delivery">🚀 내일 도착 보장</p>
+                            <p class="star">★★★★★ <span>(2,108)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 3 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal3.jpg" alt="">
+                            <p class="name">포유컴퓨터 게이밍 PC</p>
+                            <p class="sale">지금 34% 할인 중</p>
+                            <p class="delivery">무료배송</p>
+                            <p class="star">★★★★★ <span>(2,499)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 4 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal4.jpg" alt="">
+                            <p class="name">조립PC 게이밍 풀세트</p>
+                            <p class="sale">지금 47% 할인 중</p>
+                            <p class="delivery">무료배송</p>
+                            <p class="star">★★★★★ <span>(350)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 5 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal5.jpg" alt="">
+                            <p class="name">포유컴퓨터 게이밍 PC</p>
+                            <p class="sale">지금 34% 할인 중</p>
+                            <p class="delivery">무료배송</p>
+                            <p class="star">★★★★★ <span>(2,499)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 6 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal6.jpg" alt="">
+                            <p class="name">컴퓨터 조립 풀세트 조립PC 게이밍 사무용 고사양 게···</p>
+                            <p class="sale">지금 47% 할인 중</p>
+                            <p class="delivery">무료배송</p>
+                            <p class="star">★★★★★ <span>(350)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 7 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal7.jpg" alt="">
+                            <p class="name">몬스터에너지 드링크 울트라 피치 킨, 355ml, 24개</p>
+                            <p class="sale">지금 22% 할인 중</p>
+                            <p class="delivery">🚀 내일 도착 보장</p>
+                            <p class="star">★★★★★ <span>(5,917)</span></p>
+                        </a>
+                    </div>
+
+                    <!-- 상품 8 -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/deal8.jpg" alt="">
+                            <p class="name">탐삼수 무라벨, 2L, 12개</p>
+                            <p class="sale">지금 34% 할인 중</p>
+                            <p class="delivery">🚀 내일 도착 보장</p>
+                            <p class="star">★★★★★ <span>(1,598.768)</span></p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="product-next">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+
+                <div class="product-prev">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="seller-special1">
+
+            <div class="special-top">
+
+                <h2>
+                    오늘의 <span>판매자 특가</span>
+                </h2>
+
+                <div class="special1-page"></div>
+
+            </div>
+
+            <div class="swiper sellerSwiper1">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal9.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                25년 전통 아삭아삭 담아 보내는 가정식 얼갈이 열무 물김···
+                            </p>
+
+                            <p class="discount">할인 46%</p>
+
+                            <p class="price">11,720원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(1,085)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal10.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                매일 갓 담가 보내는 수제 국내산 전라도 무생채 김치, 1개, 1kg
+                            </p>
+
+                            <p class="discount">할인 22%</p>
+
+                            <p class="price">8,450원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(174)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal11.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                프롯 엉덩이 여드름 크림 엉덩이 종기 엉덩이 뾰루지 크림 엉덩···
+                            </p>
+
+
+
+                            <p class="price">13,900원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(559)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal12.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                롯데 프리미엄 가나 초콜릿 미니 쇼콜라 랑드샤 쿠키 40개(개별)
+                            </p>
+
+                            <p class="discount">할인 37%</p>
+
+                            <p class="price">14,040원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(75)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal13.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                팜블리 프리미엄 갈치, 5개, 약 20g(3토막)
+                            </p>
+
+                            <p class="discount">할인 32%</p>
+
+                            <p class="price">13,380원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(14,366)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal14.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                담다웰 엑스트라버진 올리브오일 스틱 유기농 스페인산 14p,1개
+                            </p>
+
+
+
+                            <p class="price">12,750원</p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(686)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal15.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                다파니 달콤 바삭 미니 한입 꽈배기 개별포장 100개입, 100개
+                            </p>
+
+                            <p class="discount">할인 42%</p>
+
+                            <p class="price">10,920원</p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(1,096)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/deal16.jpg" alt="">
+                            <span class="badge">특가진행중</span>
+
+                            <p class="product-name">
+                                가득 기어원드 탁상용 무선 선풍기, GDF-4000, 누드베이지
+                            </p>
+
+                            <p class="discount">할인 29%</p>
+
+                            <p class="price">29,640원</p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(267)</span>
+                            </p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="seller1-next"><span style="font-size: 20px;"> ></span>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="seller-special2">
+
+            <div class="special-top">
+
+                <h2>
+                    전세계 핫딜 <span style="color: #9e20d3;">로켓직구 글로벌특가</span>
+                </h2>
+
+                <div class="special2-page"></div>
+
+            </div>
+
+            <div class="swiper sellerSwiper2">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world1.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 58%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                SMABAT 공기 전도 블루투스이어폰 이어클립형 방수 노이즈캔슬···
+                            </p>
+
+
+
+                            <p class="price2">13,500원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(1,301)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world2.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 88%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                모이사나이트 1캐럿 스퀘어 모조 다이아몬드 팬던트 목걸이
+                            </p>
+
+
+
+                            <p class="price2">9,000원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(479)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world3.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 86%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                YKniorxeva 스마트 탈취 신발 건조기 지능형 항온 자유정시 접···
+                            </p>
+
+
+
+                            <p class="price2">12,040원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(243)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world4.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 53%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                Tiger Pavilion 다기능 수납 트롤리 3단, 블랙, 2개
+                            </p>
+
+                            <p class="price2">8,900원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(6,311)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world5.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 32%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                Qiaokao 통기 방습 메쉬 반려동물 침대, 블랙, 1개
+                            </p>
+
+                            <p class="price2">16,990원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(262)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world6.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 44%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                이어폰 5.4 이어폰 무선 이어폰 Sport Over Earphones 내장···
+                            </p>
+
+
+
+                            <p class="price2">27,750원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(114)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world7.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 37%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                클레버 오색 찻잔 5개입, 그린 + 화이트 + 블루 + 옐로우 + 레드, ···
+                            </p>
+
+                            <p class="price2">7,430원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★☆ <span style="color: #787878;">(473)</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" id="life">
+                            <img src="img/world8.jpg" alt="">
+                            <span class="badge2">
+                                <img src="img/textlogo.jpg" alt="">
+                                지금 65%할인 중
+                            </span>
+
+                            <p class="product-name">
+                                가득 기어원드 탁상용 무선 선풍기, GDF-4000, 누드베이지
+                            </p>
+
+                            <p class="price2">13,500원
+                                <img src="img/textlogo2.jpg" alt="">
+                            </p>
+
+                            <p class="rating">
+                                ★★★★★ <span style="color: #787878;">(267)</span>
+                            </p>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="seller2-next"><span style="font-size: 20px;"> ></span>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="band-banner">
+
+            <div class="swiper bannerSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/band-banner1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/band-banner2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/band-banner3.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="banner-prev">
+                    <span class="material-symbols-outlined">
+                        chevron_left
+                    </span>
+                </div>
+
+                <div class="banner-next">
+                    <span class="material-symbols-outlined">
+                        chevron_right
+                    </span>
+                </div>
+
+                <div class="banner-pagination"></div>
+
+            </div>
+
+        </section>
+        <div class="category-menu">
+            <ul>
+                <li><a href="#keyword1">
+                        <img src="img/tablogo1.jpg" alt="" style="object-fit: contain; width: 30px; height: 30px;">
+                    </a></li>
+                <li><a href="#keyword2">
+                        <img src="img/tablogo2.jpg" alt="" style="object-fit: contain; width: 30px; height: 30px;">
+                    </a>
+                </li>
+                <li><a href="#keyword3">
+                        <img src="img/tablogo3.jpg" alt="" style="object-fit: contain; width: 30px; height: 30px;">
+                    </a></li>
+            </ul>
+        </div>
+        <div class="table">
+            <div class="keyword" id="keyword1">
+                <div class="k-title">
+                    <p>HOT! TREND</p>
+                    <p>카테고리별 <span style="color: #3b7dff; margin-left: 5px;">추천 광고상품</span></p>
+                </div>
+                <div class="travel-wrap">
+
+                    <!-- 왼쪽 -->
+                    <div class="travel-left">
+
+                        <ul>
+                            <li>
+                                <h2 style="color: #62AB66;">주방용품</h2>
+                            </li>
+                            <li><a href="#">바로가기 ></a></li>
+                        </ul>
+
+                        <div class="travel-text">
+                            <h3>HOT키워드</h3>
+
+                            <a href="#">#텀블러/콜드컵</a>
+                            <a href="#">#수세미</a>
+                            <a href="#">#고무장갑</a>
+                            <a href="#">#도시락통/찬합</a>
+                            <a href="#">#프라이팬</a>
+                            <a href="#">#앞치마</a>
+                        </div>
+
+                    </div>
+
+                    <!-- 가운데 큰 배너 -->
+                    <div class="travel-main">
+
+                        <div class="swiper travelSwiper1">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="img/kit1.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/kit2.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/kit3.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/kit4.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/kit5.jpg" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 점 -->
+                        <div class="travel1-page"></div>
+                    </div>
+
+                    <!-- 오른쪽 상품 -->
+                    <div class="travel-right">
+
+                        <button class="travel-prev">&lt;</button>
+
+                        <div class="swiper travelItemSwiper">
+
+                            <div class="swiper-wrapper">
+
+                                <!-- 페이지1 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub1.jpg" alt="">
+                                                    <dl>
+                                                        <dt>에브리윅 길이조절 정리선반, 1개</dt>
+                                                        <dd>13,700원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub2.jpg" alt="">
+                                                    <dl>
+                                                        <dt>가방몰 ADD043 대형 3종 블랙 실버 오렌지 나이프케이···</dt>
+                                                        <dd>81,360원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub3.jpg" alt="">
+                                                    <dl>
+                                                        <dt>올리브조이 비스코스 100% 독일 부직포 오색행주 5종, 20개</dt>
+                                                        <dd>6,980원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub4.jpg" alt="">
+                                                    <dl>
+                                                        <dt>코코에브리데이 피크닉 가방 1+1 보냉 보온, 1개, 베이지</dt>
+                                                        <dd>13,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- 페이지2 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub5.jpg" alt="">
+                                                    <dl>
+                                                        <dt>CookBuddy 스텐 후아리팬 인덕션 스텐팬 316 스테인···</dt>
+                                                        <dd>26,910원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub6.jpg" alt="">
+                                                    <dl>
+                                                        <dt>백수소반 골드라벨 레터링 우드 유리 양념통 선반 세트, 1···</dt>
+                                                        <dd>24,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub7.jpg" alt="">
+                                                    <dl>
+                                                        <dt>트라이탄 투웨이 양념통 세트, 1세트, 2단 수납함 + 양념병···</dt>
+                                                        <dd>42,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/kit-sub8.jpg" alt="">
+                                                    <dl>
+                                                        <dt>[무료배송]국산 서랍형 수저통 12색 업소용 식당용 위생수···</dt>
+                                                        <dd>37,300원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="travel-next">&gt;</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="keyword" id="keyword2">
+
+                <div class="travel-wrap">
+
+                    <!-- 왼쪽 -->
+                    <div class="travel-left">
+
+                        <ul>
+                            <li>
+                                <h2 style="color: #AB47BC;">반려</h2>
+                                <h2 style="color: #AB47BC;">동물용품</h2>
+                            </li>
+                            <li><a href="#">바로가기 ></a></li>
+                        </ul>
+
+                        <div class="travel-text">
+                            <h3>HOT키워드</h3>
+
+                            <a href="#">#고양이사료</a>
+                            <a href="#">#배변패드</a>
+                            <a href="#">#강아지옷</a>
+                            <a href="#">#고양이간식</a>
+                            <a href="#">#강아지계단</a>
+                            <a href="#">#츄르</a>
+                            <a href="#">#고양이모래</a>
+                            <a href="#">#어항</a>
+                        </div>
+
+                    </div>
+
+                    <!-- 가운데 큰 배너 -->
+                    <div class="travel-main">
+
+                        <div class="swiper travelSwiper2">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="img/pat1.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/pat2.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/pat3.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/pat4.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/pat5.jpg" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 점 -->
+                        <div class="travel2-page"></div>
+                    </div>
+
+                    <!-- 오른쪽 상품 -->
+                    <div class="travel-right">
+
+                        <button class="travel-prev">&lt;</button>
+
+                        <div class="swiper travelItemSwiper">
+
+                            <div class="swiper-wrapper">
+
+                                <!-- 페이지1 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub1.jpg" alt="">
+                                                    <dl>
+                                                        <dt>옥희독희 반려동물 네모백팩전용 네모쿠션, 화이트, 2개</dt>
+                                                        <dd>13,300원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub2.jpg" alt="">
+                                                    <dl>
+                                                        <dt>네츄럴랩 강아지 케어 유기농 기능성 사료, 피부/피모+알···</dt>
+                                                        <dd>80,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub3.jpg" alt="">
+                                                    <dl>
+                                                        <dt>자연애 강아지 간식 프리바이오틱스 칼슘치즈 450g, 단품··· </dt>
+                                                        <dd>10,230원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub4.jpg" alt="">
+                                                    <dl>
+                                                        <dt>옥희독희 반려동물 꿀몬스 방석, 아이보리, 1개</dt>
+                                                        <dd>68,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- 페이지2 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub5.jpg" alt="">
+                                                    <dl>
+                                                        <dt>이나바 챠오츄르 버라이어티 고양이 간식, 씨푸드 버라이···</dt>
+                                                        <dd>22,370원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub6.jpg" alt="">
+                                                    <dl>
+                                                        <dt>보양대첩 전연령 강아지 워밍상온화식 사료, 소, 50g, 2세트</dt>
+                                                        <dd>36,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub7.jpg" alt="">
+                                                    <dl>
+                                                        <dt>굿데이 강아지 건강한 육포말이 우유껌 간식, 소고기, 240···</dt>
+                                                        <dd>11,500원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pat-sub8.jpg" alt="">
+                                                    <dl>
+                                                        <dt>모나지오 스위트 시리즈 키높이형 반려동물 원목식기, 네···</dt>
+                                                        <dd>17,800원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="travel-next">&gt;</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="keyword" id="keyword3">
+
+                <div class="travel-wrap">
+
+                    <!-- 왼쪽 -->
+                    <div class="travel-left">
+
+                        <ul>
+                            <li>
+                                <h2>여행</h2>
+                            </li>
+                            <li><a href="#">바로가기 ></a></li>
+                        </ul>
+
+                        <div class="travel-text">
+                            <h3>HOT키워드</h3>
+
+                            <a href="#">#와우회원여행특가</a>
+                            <a href="#">#오늘의티켓특가</a>
+                            <a href="#">#오늘의숙박특가</a>
+                            <a href="#">#제주렌터카</a>
+                        </div>
+
+                    </div>
+
+                    <!-- 가운데 큰 배너 -->
+                    <div class="travel-main">
+
+                        <div class="swiper travelSwiper3">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="img/keywordimg1.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/keywordimg2.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/keywordimg3.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/keywordimg4.jpg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="img/keywordimg5.jpg" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- 점 -->
+                        <div class="travel3-page"></div>
+                    </div>
+
+                    <!-- 오른쪽 상품 -->
+                    <div class="travel-right">
+
+                        <button class="travel-prev">&lt;</button>
+
+                        <div class="swiper travelItemSwiper">
+
+                            <div class="swiper-wrapper">
+
+                                <!-- 페이지1 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub1.jpg" alt="">
+                                                    <dl>
+                                                        <dt>해운대 블루라인파크</dt>
+                                                        <dd>7,800원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub2.jpg" alt="">
+                                                    <dl>
+                                                        <dt>네이처파크 이용권</dt>
+                                                        <dd>8,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub3.jpg" alt="">
+                                                    <dl>
+                                                        <dt>서울대공원 리프트</dt>
+                                                        <dd>7,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub4.jpg" alt="">
+                                                    <dl>
+                                                        <dt>오션어드벤처</dt>
+                                                        <dd>23,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                                <!-- 페이지2 -->
+                                <div class="swiper-slide">
+
+                                    <div class="item-grid">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub5.jpg" alt="">
+                                                    <dl>
+                                                        <dt>에버랜드</dt>
+                                                        <dd>19,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub6.jpg" alt="">
+                                                    <dl>
+                                                        <dt>롯데월드</dt>
+                                                        <dd>17,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub7.jpg" alt="">
+                                                    <dl>
+                                                        <dt>제주 렌터카</dt>
+                                                        <dd>29,900원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/sub8.jpg" alt="">
+                                                    <dl>
+                                                        <dt>아쿠아리움</dt>
+                                                        <dd>15,000원</dd>
+                                                    </dl>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="travel-next">&gt;</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+
+        <!-- 상단 메뉴 -->
+        <div class="footer-menu">
+            <div>
+                <ul>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">회사소개</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">Investor Relations</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">인재채용</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">입점/제휴문의</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">공지사항</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">고객의 소리</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">이용약관</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; "><a href="#"
+                            style="  margin: 0 10px ; font-weight: bold;">개인정보 처리방침</a></li>
+                </ul>
+                <br>
+                <ul>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">정보보호/개인정보보호 인증</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">쿠팡페이 이용약관</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">신뢰관리센터</a></li>
+                    <li style="display: flex; align-items: center; height: 14px; border-right: 2px solid #000;"><a
+                            href="#" style="  margin: 0 10px ; ">제휴마케팅</a></li>
+                    <l style="display: flex; align-items: center; height: 14px;"><a href="#"
+                            style="  margin: 0 10px ; ">광고안내</a></l>
+                </ul>
+            </div>
+
+
+            <select>
+                <option>Global Site</option>
+                <option>Coupang Taiwan 酷澎台灣</option>
+            </select>
+        </div>
+
+        <!-- 가운데 회사정보 -->
+        <div class="footer-info">
+
+            <div class="info-box logo-box" style="width: 100%; position: relative;">
+                <h1 style="text-align: right;">coupang</h1>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">상호명 및 호스팅 서비스 제공 : 쿠팡(주)</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">대표이사 : 로저스 해돌드 린(ROgers
+                            Harold Lynn)</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">서울시 송파구 송파대로 570</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">사업자 등록번호 : 120-88-00767</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">통신판매업신고 : 2017-서울송파-0680</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p
+                                style=" font-size: 13px; color: #626262; letter-spacing: 0.03em; text-decoration: underline; ">
+                                사업자정보 확인></p>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li>
+                        <p style="color: #505050; font-weight: bold; font-size: 14px;">365고객센터 │ <span
+                                style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">전자금융거래분쟁처리담당</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 style="font-size: 24px; color: #555;">1577-7001(유료)</h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">서울시 송파구 송파대로 570</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">email:help@coupang.com</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <ul>
+                    <li>
+                        <p style="color: #505050; font-weight: bold; font-size: 14px;">채무지급보증 안내</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">당사는 고객님이 현금 결제한 금액에 대해</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">채무지급보증 계약을 체결하여</p>
+                    </li>
+                    <li>
+                        <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em;">안전거래를 보장하고 있습니다.</p>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p style="font-size: 13px; color: #626262; letter-spacing: 0.03em; text-decoration: underline;">서비스 가입사실 확인></p>
+                        </a>
+
+                    </li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+        <!-- 인증마크 -->
+        <div class="footer-cert">
+            <img src="img/Pcrmark.jpg" alt="">
+       
+        </div>
+
+        <!-- 하단 카피라이트 -->
+        <div class="footer-bottom">
+
+            <div class="copyright">
+                2026.06.06 © portfolio.
+            </div>
+
+            <div class="sns">
+                 <a href="#">
+                    <img src="img/mark.jpg" alt="">
+                 </a>
+            </div>
+
+        </div>
+
+    </footer>
+    <button id="topBtn">↑</button>
+</body>
+
+</html>

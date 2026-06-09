@@ -1,0 +1,289 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  overflow:hidden;
+  font-family: "AURORA-PRO", sans-serif;
+  
+  
+ 
+}
+@font-face {
+  font-family: "AURORA-PRO";
+  src: url('Font/AURORA-PRO.otf') format('otf');
+}
+.main{
+  width: 	1700px;
+  height:  940px;
+}
+
+
+.background {
+   width: 	1700px;
+   height:  936px;
+   position: fixed;
+   overflow: hidden; /* 내부 넘침 숨김 */
+  
+}
+.background img{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  
+}
+.main {
+  width: 1666px;
+  height: 760px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+  z-index: 100;
+}
+.main .test{
+position: relative;
+width: 900px;
+top: 100px;
+height: 400px;
+margin: 0 auto;
+}
+.main .test ul{
+position: relative;
+}
+.main .test ul li{
+ list-style: none;
+ font-size: 100px;
+ text-align: center;
+ user-select: none;
+
+ 
+}
+
+.flicker-text {
+  font-family: "AURORA-PRO";
+}
+.text-flicker-in-glow {
+	-webkit-animation: text-flicker-in-glow 4s ease-in-out both;
+	        animation: text-flicker-in-glow 4s ease-in-out both;}
+.flicker-text {
+ animation: text-flicker-in-glow 3s linear forwards;
+ color: white;
+    }
+    /*선*/
+  .background .left-top {
+    position: absolute;
+    top: 100px;
+    left: 200px;    /* 원하는 가로 위치 */
+    width: 3px;
+    height: 250px;
+    background-color: #000; /* 세로선 색 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .left-top li{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+    .background .left-bottom{
+    position: absolute;
+    top: 480px;
+    left: 200px;    /* 원하는 가로 위치 */
+    width: 1.7px;
+    height: 500px;
+    background-color: #fff; /* 세로선 색 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    }
+    .background .bottom{
+      position: absolute;
+      top: 800px;
+      width: 1920px;
+      height: 1.7px;
+      background-color: #fff; /* 세로선 색 */
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /*선*/
+    /*개인브랜드마크*/
+    .background .item{
+      width: 80px;
+      height: 80px;
+      top: 373px;
+      left: 155px; 
+      position: absolute;
+      list-style: none;
+    }
+       .background .item li img{
+        
+      filter: none;  /* 블러 해제 */
+      width: 100%;
+      height: 100%;
+       object-fit: cover;
+       }
+    /*개인브랜드마크*/
+    /*저작권*/
+    .background .my{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      left: 140px;
+      transform: translateY(-50%);
+    }
+    .my-text-t,
+    .my-text-b {
+      position: absolute;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      font-size: 11px;
+      color: #fff;
+      font-family: sans-serif;
+      list-style: none;
+
+    }
+    .my-text-t {
+    top: 0;
+    left: 0;
+    }
+
+   .my-text-b {
+    top: 0; /* 텍스트 간 간격 */
+    left: 25px;
+    }
+
+   .c-mark{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 840px;
+      left: 140px;
+      list-style: none;
+    }
+     .c-mark img{
+      transform: rotate(-90deg);
+      filter: none;  /* 블러 해제 */
+      
+     }
+    /*저작권*/
+    /*메뉴아이콘*/
+    .menu {
+      width: 65px;
+      height: 65px;
+      left: 1500px;
+      top: 50px;
+      position: absolute;
+       z-index: 1100;
+    }
+    .menu ul{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      
+    }
+    .menu ul li{
+      width: 100%;
+      height: 100%;
+      list-style: none;
+    }
+    .menu ul li a{
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+    }
+     .menu ul li a img{
+      width: 65px;
+      height: 65px;
+      z-index: 1100;
+      filter: none;  /* 블러 해제 */
+     }
+   
+    /*메뉴아이콘*/
+    /*배경글씨*/
+    .concept{
+      width: 1300px;
+      height: 300px;
+      position: absolute;
+      top: 30px;
+      left: 430px;
+    }
+    .concept span{
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 50px;
+      font-family: none;
+      user-select: none;
+      
+    }
+    /*배경글씨*/
+    /*버튼*/
+
+ .home-button{
+        width: 1300px;
+      height: 300px;
+      position: absolute;
+      top: 550px;
+      left: 430px;
+ }
+.home-button .day{
+  width: 100px;
+  height: 40px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Freshman";
+  src: url("Font/Freshman.ttf") format("truetype");
+  user-select: none;
+  color: #fff;
+
+}
+.home-button .day .empty{
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateX(-150%);
+}
+.home-button .opp{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 320px;
+  transform: translateY(-20%);
+}
+.home-button .opp ul{
+  width: 200px;
+  height: 200px;
+  float: left;
+  list-style: none;
+  margin-right: 70px;
+}
+.home-button .opp ul li{
+  height: 60px;
+  width: 200px;
+  margin-top: 15px;
+}
+.home-button .opp ul li a{
+  font-size: 36px;
+  font-family: "Aira DEMO";
+  src: url("Font/Aira\ DEMO.otf") format("opentype");
+  color: #fff;
+
+
+}
+.home-button .opp ul li a:hover{
+  transition: 0.3s ease;
+   text-shadow: 0 0 10px #fff,
+               0 0 20px #0ff,
+               0 0 30px #0ff,
+               0 0 50px #0ff;
+}
+    /*버튼*/

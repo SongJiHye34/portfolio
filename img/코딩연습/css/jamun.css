@@ -1,0 +1,76 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+/**/
+  .swiper {
+        width: 100%;
+     max-width: 1700px;
+      height: 900px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     .swiper-slide ul
+     {  width: 90%;
+        height: 100%;
+         margin-top: 30px;
+     }
+    .swiper-slide ul li{
+
+      width: 90%;
+      left: 0;
+    }
+      .swiper-slide ul li p{
+        padding-left: 39px;
+        font-size: 15px;
+        text-align-last: left;
+        letter-spacing: 1px;
+        line-height: 2;
+      }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+/**/
+
+.Qna-main{
+      top: 20px;
+        width: 100%;
+        max-width: 1700px;
+        height: 4000px;
+}
+.qna {
+       margin-left: 12px;
+        border-bottom: 1px solid #ddd;
+}
+
+.qna-title {
+  width: 100%;
+  padding: 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qna-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.qna-content p {
+  padding: 15px;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+}

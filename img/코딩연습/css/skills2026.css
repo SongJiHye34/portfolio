@@ -1,0 +1,274 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+@font-face {
+     font-family: 'MyFont';
+     src: url('../Font/THE_GONjURING.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     height: 100%;
+     overflow: hidden;
+}
+
+.main{
+  width: 100%;
+  max-width: 1700px;
+  height: 2000px;
+  margin: 0 auto;
+}
+.section {
+  min-height: 1600px; 
+}
+.main .toolbar{
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+    position: absolute;
+
+}
+.main .toolbar ul{
+    width: 700px;
+    height: 150px;
+    margin: 30px 40px 0 auto;
+    
+}
+.main .toolbar ul li{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 138px;
+    height: 30px;
+}
+.main .toolbar ul li a{
+    color: #ffffff;
+    font-size: 13px;
+   
+}
+
+/*출처- https://cssbuttons.app */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+.bn38:hover {
+  background-color: #60605e;
+}
+/**/
+/*텍스트*/
+.text{
+    left: 50px;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.text ul{
+    width: 300px;
+    height: 40px;
+   
+    position: relative;
+}
+.text ul li p{
+   font-size: 17px;
+   font-family: 'MenuFont', sans-serif !important;
+   font-weight: 500;
+
+    opacity: 0;
+  transform: translateY(6px);
+  animation: Shadow 0.6s ease-out forwards;
+}
+
+@keyframes Shadow {
+    to{
+        opacity: 1;
+       transform: translateY(0);
+    }
+}
+
+/*텍스트 밑 라인*/
+.text .line{
+    width: 400px;
+    height: 1px;
+    background-color: #013C31;
+    position: relative;
+}
+/*텍스트 밑 라인*/
+/*=================그래프===============*/
+
+.chart-wrap {
+  width: 4000px;
+  height: 200px;
+  left: 203px;
+  position: relative; /* 기준 */
+}
+
+#myChart {
+  position: absolute;
+  inset: 0;
+}
+/*=================그래프===============*/
+
+/*=================하단표===============*/
+.item{
+    top: 20px;
+    left: 50px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+       float: left;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 가로 5칸 */
+    grid-template-rows: repeat(2, auto);   /* 세로 2줄 */
+    gap: 10px;
+    
+}
+.item .bar{
+    width: 130px;
+    height: 100px; 
+}
+.text-item{
+    border-top: 3px solid #013C31;
+    padding: 5px;
+    text-align: center;
+}
+.text-item li p{
+    font-size: 15px;
+   font-family: 'MyFont', sans-serif !important;
+   font-weight: 300;
+   letter-spacing: 1px;
+}
+.bar-item {
+  width: 130px;
+  height: 100px;
+  display: flex;
+  gap: 6px;
+  padding: 0;
+  margin: 12px 0 0 5px;
+}
+
+.bar-item li {
+  width: 5px;
+  height: 20px;
+  background-color: #a0a0a0;
+  list-style: none;
+  border-radius: 3px;
+    transform: scaleY(0);
+  transform-origin: bottom;
+  animation: barGrow 0.6s ease-out forwards;
+}
+@keyframes barGrow {
+  to {
+    transform: scaleY(1);
+  }
+}
+.bar-item li:nth-child(1)  { animation-delay: 0.1s; }
+.bar-item li:nth-child(2)  { animation-delay: 0.15s; }
+.bar-item li:nth-child(3)  { animation-delay: 0.2s; }
+.bar-item li:nth-child(4)  { animation-delay: 0.25s; }
+.bar-item li:nth-child(5)  { animation-delay: 0.3s; }
+.bar-item li:nth-child(6)  { animation-delay: 0.35s; }
+.bar-item li:nth-child(7)  { animation-delay: 0.4s; }
+.bar-item li:nth-child(8)  { animation-delay: 0.45s; }
+.bar-item li:nth-child(9)  { animation-delay: 0.5s; }
+.bar-item li:nth-child(10) { animation-delay: 0.55s; }
+.bar-item li:nth-child(11) { animation-delay: 0.6s; }
+
+.bar:nth-child(1) .bar-item li:nth-child(-n+7) {
+  background-color: #013C31;
+}
+
+.bar:nth-child(2) .bar-item li:nth-child(-n+7) {
+  background-color: #013C31;
+}
+
+.bar:nth-child(3) .bar-item li:nth-child(-n+4) {
+  background-color: #013C31;
+}
+
+.bar:nth-child(4) .bar-item li:nth-child(-n+9) {
+  background-color: #013C31;
+}
+.bar:nth-child(5) .bar-item li:nth-child(-n+8) {
+  background-color: #013C31;
+}
+
+.bar:nth-child(6) .bar-item li:nth-child(-n+5) {
+  background-color: #013C31;
+}
+
+.bar:nth-child(7) .bar-item li:nth-child(-n+4) {
+  background-color: #013C31;
+}
+
+
+
+/*=================하단표===============*/
+
+/* 팀 박스 */
+.Team{
+    background-color: #013C31;
+     position: absolute;
+    left: 800px;
+    top: 100px;             
+    z-index: 10; 
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+.Team ul{
+    margin: 50px 0 35px 35px;
+    width: 280px;
+    height: 300px;
+    position: relative;
+    border-bottom: 0.1px solid #fff;
+}
+.Team ul li{
+    width: 100%;
+    height: 35px;
+
+}
+.Team ul li p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'MenuFont', sans-serif !important;
+}
+.list{
+    margin: 0 auto;
+    width: 260px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+
+    font-family: 'MenuFont', sans-serif !important;
+}
+/* 팀 박스 */

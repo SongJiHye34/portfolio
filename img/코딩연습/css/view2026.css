@@ -1,0 +1,198 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+
+
+.main{
+  width: 100%;
+  max-width: 1700px;
+  height: 3000px;
+  margin: 0 auto;
+}
+.main .toolbar{
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+    position: absolute;
+
+}
+.main .toolbar ul{
+    width: 700px;
+    height: 150px;
+    margin: 30px 40px 0 auto;
+    
+}
+.main .toolbar ul li{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 138px;
+    height: 30px;
+}
+.main .toolbar ul li a{
+    color: #000000;
+    font-size: 13px;
+   
+}
+.main .toolbar ul li:hover a{
+    color: #fff;
+}
+/*출처- https://cssbuttons.app */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+.bn38:hover {
+  background-color: #60605e;
+}
+/**/
+/* 수정사항 */
+.story {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  display: flex;
+}
+.story .typo{
+  width: 70%;
+  height: 100%;
+  position: relative;
+  margin: 0 0 0 80px ;
+  padding-top: 200px;
+}
+.story .typo ul{
+  height: 150px;
+  width: 100%;
+  text-align-last: left;
+  position: relative;
+}
+
+.story .typo ul li{
+ width: 500px;
+ position: relative;
+ overflow: hidden;
+}
+#big{
+  height: 35px;
+  position: relative;
+  color: #393939;
+  font-size: 20px;
+  font-weight: 600;
+}
+.color{
+  width: 30%;
+  height: 560px;
+  position: relative;
+ 
+}
+.color ul{
+  width: 100%;
+  height: 50%;
+  padding-top: 220px;
+  position: relative;
+  margin: 0 auto;
+}
+.color ul li{
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  background-color: #393939;
+}
+/* 수정사항 */
+/*작업내역*/
+.view {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.view h1 {
+  padding-top: 30px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 90px;
+}
+
+.view .item {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+}
+
+.view .item ul {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1d1d1;
+  
+}
+
+.view .item ul li:first-child {
+    flex: none;
+  height: 500px; 
+  
+}
+
+.view .item ul li:last-child {
+  flex: 3;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.view .item ul li p{
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.view .item ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+/*작업내역*/
+/*버튼*/
+#topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  display: none; /* 처음엔 숨김 */
+  z-index: 1000;
+}
+
+#topBtn:hover {
+  background: #555;
+}
+/*버튼*/

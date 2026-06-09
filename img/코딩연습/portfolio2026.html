@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포토폴리오</title>
+    <link rel="stylesheet" href="css/portfolio2026.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/portfolio2026.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="menu">
+                <li><a href="Aboutme2026.html" class="bn3637 bn38">About me</a></li>
+                <li><a href="portfolio2026.html" class="bn3637 bn38">Portfolio</a></li>
+                <li><a href="design2026.html" class="bn3637 bn38">Design</a></li>
+                <li><a href="skills2026.html" class="bn3637 bn38">Skills</a></li>
+                <li><a href="contact2026.html" class="bn3637 bn38">content</a></li>
+            </ul>
+            <button id="menuBtn">+</button>
+        </div>
+        <div id="overlay"></div>
+
+        <div id="sideMenu">
+            <button id="closeBtn">×</button>
+            <ul>
+                <li><a href="Aboutme2026.html" class="morph-button">
+                        <button id="morphBtnAbout" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>ABOUT ME </span>
+                        </button>
+                    </a>
+                </li>
+
+                <li><a href="portfolio2026.html" class="morph-button">
+                        <button id="morphBtnportfolio" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>PORTFOLIO </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="design2026.html" class="morph-button">
+                        <button id="morphBtnDesign" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>DESIGN </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="skills2026.html" class="morph-button">
+
+                        <button id="morphBtnSkills" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>SKILLS </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="contact2026.html" class="morph-button">
+                        <button id="morphBtnContact" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>CONTACT</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="background">
+            <img src="img/mainimg(1).jpg" alt="bi">
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <ul>
+                <li><img src="img/pf_Reimg2.jpg" alt="ds"></li>
+            </ul>
+            <ul>
+                <dt>디스커버리 익스페디션</dt>
+                <dd>공식온라인 쇼핑몰</dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><img src="img/pf_Reimg6.jpg" alt="fa"></li>
+            </ul>
+            <ul>
+                <dt>필라 코리아</dt>
+                <dd>공식온라인 쇼핑몰</dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><img src="img/pf_Reimg7.jpg" alt="as"></li>
+            </ul>
+            <ul>
+                <dt>아리엘Style</dt>
+                <dd>여성의류 전문 인터넷 쇼핑몰</dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><img src="img/YGMARK.png" alt="yg"></li>
+            </ul>
+            <ul>
+                <dt>YG 엔터테이먼트</dt>
+                <dd>'YG'기업 공식사이트</dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><img src="" alt=""></li>
+            </ul>
+            <ul>
+                <dt>서브웨이</dt>
+                <dd></dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+        <div class="grid">
+            <ul>
+                <li><img src="" alt=""></li>
+            </ul>
+            <ul>
+                <dt>준비중</dt>
+                <dd>시일내 업로드 할 예정입니다.</dd>
+                <button><a href="#"> WED </a></button>
+                <button><a href="#"> 작업내용 </a></button>
+            </ul>
+        </div>
+    </div>
+    <div class="redesign">
+        <ul>
+            <li class="title">
+                <p>Re design</p>
+            </li>
+        </ul>
+        <div class="maindesign">
+            <ul class="imgbox">
+                <li><a href="#"><img id="hoverImg1" src="img/sg.jpg" alt="shose"></a></li>
+            </ul>
+            <ul class="textbox">
+                <li>
+                    <h1>사뿐</h1>
+                </li>
+                <li>
+                    <p>여성 신발 홈페이지[비반응형]</p>
+                    <a href="#">
+                        <p>상세작업내역+</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="subdesign">
+            <div class="design-top">
+                <ul class="sub-i-box">
+                    <li><a href="#"><img id="hoverImg2" src="img/fs.jpg" alt="fashion"></a>
+                    </li>
+                </ul>
+                <ul class="sub-t-box">
+                    <li>
+                        <h1 class="text-active">러셀</h1>
+                    </li>
+                    <li>
+                        <p>트렌디한 여성 패션 쇼핑몰[비반응형]</p>
+                        <a href="#">
+                            <p>상세작업내역+</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="design-bottom">
+                <ul class="sub-i-box">
+                    <li><a href="#"><img id="hoverImg3" src="img/sh.jpg" alt="shose"></a>
+                    </li>
+                </ul>
+                <ul class="sub-t-box">
+                    <li>
+                        <h1 class="text-active">골든구스</h1>
+                    </li>
+                    <li>
+                        <p>글로벌 브랜드 골든구스 홈페이지[비반응형]</p>
+                        <a href="#">
+                            <p>상세작업내역+</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

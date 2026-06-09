@@ -1,0 +1,743 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/THE_GONJURING.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Korea';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+
+.main {
+  width: 100%;
+  max-width: 1700px;
+  height: 1600px;
+  margin: 0 auto;
+}
+
+.main .header {
+  width: 1200px;
+  height: 100px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  right: 80px;
+
+}
+
+/*-----------------------
+          메뉴토글
+--------------------------*/
+
+
+
+/* 오버레이 */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* 사이드 메뉴 */
+#sideMenu {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  padding: 40px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+#sideMenu ul {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sideMenu.active {
+  right: 0;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#menuBtn {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#closeBtn {
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 770px) {
+  .header .menu {
+    display: none;
+  }
+
+  .header {
+    width: 900px !important;
+    height: 100px;
+  }
+
+  #menuBtn {
+    font-size: 70px;
+  }
+
+  #sideMenu {
+    width: 100%;
+    right: -100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  #sideMenu.active {
+    right: 0;
+  }
+
+  #closeBtn {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 20;
+    color: #111;
+    font-size: 60px;
+  }
+
+  #sideMenu ul {
+  margin: 180px 400px 0 0;
+  gap: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center; 
+  }
+  .morph-button{
+    width: 500px !important;
+    font-size: 1.8rem !important;
+    height: 200px !important;
+  }
+  .from{
+     min-width: 1000px !important;
+      display: flex;
+      gap: 180px  !important;
+      height: auto !important;
+  flex-direction: column;
+  }
+  .profile{
+    margin-top: 30px;
+    min-width: 1000px !important;
+
+  }
+  .profile >div{
+    flex: 0.3px !important;
+    padding: 0 5px !important;
+  }
+  .bottom-text-box{
+    width: 1000px !important;
+  }
+
+  .swiper-pagination{ 
+  bottom: 80px !important;
+  width: 1000px !important;
+
+  }
+}
+
+/**/
+.main .header ul li {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: 138px;
+  height: 30px;
+}
+
+.main .header ul li a {
+  color: #000000;
+  font-size: 13px;
+
+}
+
+.main .header ul li:hover a {
+  color: #fff;
+}
+
+#sideMenu ul li {
+  height: 100px;
+}
+
+.morph-button {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.morph-button svg.morph path {
+  pointer-events: none;
+}
+
+.morph-button span {
+  position: relative;
+}
+
+.morph-button svg.morph {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  fill: #4A6FA5;
+  transition: fill 0.2s ease;
+}
+
+.morph-button:hover svg.morph {
+  fill: #3B82F6;
+}
+
+
+/**/
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bn38:hover {
+  background-color: #60605e;
+}
+
+/**/
+
+.main .background {
+   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main .background img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  background: #fff;  
+}
+.origin{
+    padding-top: 100px;
+    width: 1400px;
+    max-width: 1740px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.origin > div{
+    display: flex;
+      display: flex;
+  flex-direction: column;
+
+}
+.origin > div ul{
+    display:  flex;
+}
+.origin .top{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+    align-items: center;   
+    gap: 30px;      
+}
+.origin .top .top-left{
+    margin-left: 200px;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+
+    gap: 15px;
+    position: relative;
+}
+.origin .top .top-left ul{
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .top .top-left ul li{
+     float: none;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#first{
+    width: 350px;
+}
+#first h1{
+    margin-top: 20px;
+    font-size: 26px;
+}
+ #report{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    margin-top: 130px;
+} #report li{
+    width: 70px;
+}
+#report p{
+    
+    color: #cdcdcd;
+    font-size: 13px;
+    font-weight: 500;
+}
+#report a{       
+    white-space: nowrap; 
+}
+
+#texts {
+    flex: 6;
+}
+#buttons {
+    display: flex;
+    gap: 10px;
+     flex: 4;
+}
+#buttons .btn{
+   width: 100px;
+   height: 40px;
+   background-color: #cdcdcd;
+ flex: 6;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+  
+   text-align: center;
+   border-radius: 5%;
+   transition: background-color 0.3s ease;
+}
+#buttons .btn:hover{
+      background-color: #292929;
+}
+#buttons .btn:hover a{
+    color: #cdcdcd;
+}
+
+.origin .top .top-right{
+    position: relative;
+    right: 0;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+}
+.origin .top .top-right ul{
+     width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .top .top-right ul li{
+     width: 250px;
+    height: 250px;
+    position: relative;
+}
+.origin .top .top-right ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.origin .center{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;    
+    
+}
+
+
+.origin .center .center-left{
+    margin-left: 200px;
+    position: relative;
+    right: 0;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 300px;
+}
+.origin .center .center-left ul{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .center .center-left ul li{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.origin .center .center-left ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.origin .center .center-right{
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+
+    gap: 15px;
+    position: relative;
+}
+.origin .center .center-right ul{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .center .center-right ul li{
+    float: none;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.origin .bottom{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;   
+    gap: 30px;
+}
+.origin .bottom .bottom-left{
+   margin-left: 200px;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+
+    gap: 15px;
+    position: relative;
+}
+.origin .bottom .bottom-left ul{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .bottom .bottom-left ul li{
+   float: none;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.origin .bottom .bottom-right{
+     position: relative;
+    right: 0;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+}
+.origin .bottom .bottom-right ul{
+     width: 300px;
+    height: 300px;
+    position: relative;
+}
+.origin .bottom .bottom-right ul li{
+     width: 250px;
+    height: 250px;
+    position: relative;
+}
+.origin .bottom .bottom-right ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*리디자인*/
+.redesign{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.redesign ul li.title{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 37px;
+}
+.redesign ul li{
+    position: static;
+}
+/*리디자인*/
+/*(하단) 리디자인-큰거*/
+.redesign .maindesign{
+    width: 55%;
+    height: 715px;       
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;   
+ 
+
+}
+.redesign .maindesign ul{
+    width: 100%;
+    min-height: 0;
+    position: relative;
+}
+.redesign .maindesign ul li{
+     width: 100%;
+    height: 100%;
+    position: relative;
+}
+ .maindesign .imgbox{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.maindesign .imgbox li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.maindesign .imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.textbox{
+    margin-left: 30px;
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.textbox > li{
+    display: block;
+}
+
+.textbox > li:nth-child(1) h1{
+    font-size: 30px;
+}
+
+.textbox > li:nth-child(2){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.textbox ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.textbox li p{
+    color: #cdcdcd;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/*(하단) 리디자인-큰거*/
+/*(하단) 리디자인-작은거*/
+.redesign .subdesign{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subdesign .design-top,
+.subdesign .design-bottom{
+    height: calc((700px - 30px) / 2); /* 큰 카드와 높이 맞춤 */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.sub-i-box{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    flex: 1;
+}
+
+.sub-i-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sub-i-box li{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.sub-t-box{
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.sub-t-box > li{
+    display: block;
+}
+
+.sub-t-box > li:nth-child(1){
+    font-size: 12px;
+}
+
+.sub-t-box > li:nth-child(2){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sub-t-box > li p{
+    color: #cdcdcd;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+#hoverImg1,
+#hoverImg2,
+#hoverImg13 {
+    transition: transform 0.3s ease;
+}
+#hoverImg img {
+    overflow: hidden;
+}
+.text-active {
+  color: #cdcdcd;
+  transition: color 0.3s ease;
+}
+
+.sub-t-box li a:hover p{
+    font-weight: 700;
+    color: #000000;
+    transition: color 0.7s ease;
+}
+
+.textbox li a:hover p{
+    font-weight: 700;
+    color: #000000;
+    transition: color 0.7s ease;
+}
+/*(하단) 리디자인-작은거*/

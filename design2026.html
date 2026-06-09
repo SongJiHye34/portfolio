@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디자인</title>
+    <link rel="icon" href="img/mark.jpg">
+    <link rel="stylesheet" href="css/design2026.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/design2026.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="header-menu">
+                <li><a href="Aboutme2026.html" class="bn3637 bn38">About me</a></li>
+                <li><a href="portfolio2026.html" class="bn3637 bn38">Portfolio</a></li>
+                <li><a href="design2026.html" class="bn3637 bn38">Design</a></li>
+                <li><a href="skills2026.html" class="bn3637 bn38">Skills</a></li>
+                <li><a href="contact2026.html" class="bn3637 bn38">content</a></li>
+            </ul>
+            <button id="menuBtn">+</button>
+        </div>
+        <div id="overlay"></div>
+
+        <div id="sideMenu" class="side-menu">
+            <button id="closeBtn">×</button>
+            <ul>
+                <li><a href="home2026.html" class="morph-button">
+                        <button id="morphBtnhome" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnhome.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnhome.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>HOME </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="Aboutme2026.html" class="morph-button">
+                        <button id="morphBtnAbout" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnAbout.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>ABOUT ME </span>
+                        </button>
+                    </a>
+                </li>
+
+                <li><a href="portfolio2026.html" class="morph-button">
+                        <button id="morphBtnportfolio" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnportfolio.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>PORTFOLIO </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="design2026.html" class="morph-button">
+                        <button id="morphBtnDesign" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnDesign.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>DESIGN </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="skills2026.html" class="morph-button">
+
+                        <button id="morphBtnSkills" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnSkills.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>SKILLS </span>
+                        </button>
+                    </a>
+                </li>
+                <li><a href="contact2026.html" class="morph-button">
+                        <button id="morphBtnContact" class="morph-button">
+                            <svg class="morph" viewBox="0 0 500 190" preserveAspectRatio="none">
+                                <path
+                                    d="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70">
+                                    <animate attributeName="d" dur=".2s"
+                                        values="M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70;M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseover"
+                                        fill="freeze" restart="whenNotActive" />
+                                    <animate attributeName="d" dur=".5s"
+                                        values="M420 160c-40 0-120-20-170-20s-130 20-170 20-70-30-70-70 30-70 70-70 120 20 170 20 130-20 170-20 70 30 70 70-30 70-70 70;M420 160c-4.67 0-165.73-20-170-20S84 160 80 160 10 93 10 90s65.32-70 70-70 166 20 170 20 166-20 170-20 70 65.33 70 70-65.33 70-70 70"
+                                        calcMode="spline" keysplines="0 0.5 0.5 1" begin="morphBtnContact.mouseout"
+                                        fill="freeze" restart="whenNotActive" />
+                                </path>
+                            </svg>
+                            <span>CONTACT</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#banner">배너</a></li>
+                    <li style="    cursor:not-allowed; pointer-events:none;"><a href="#logo"
+                            style=" color: #adadad; ">로고</a></li>
+                    <li style="    cursor:not-allowed; pointer-events:none;"><a href="#icon"
+                            style=" color: #adadad;">아이콘</a></li>
+                    <li><a href="#detail">상세 페이지 배너</a></li>
+                    <li><a href="#promo">프로모션</a></li>
+                </ul>
+            </div>
+            <div class="mini">
+                <ul>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/banner-1.png" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/banner-2.png" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/banner-3.png" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/event.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/event2.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/event3.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/event4.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/event5.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/banner2.jpg" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/main-img.png" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" style="overflow: hidden; width: 100%;">
+                            <img src="img/main-img3.png" alt="" style="object-fit: cover; width: 100%; height: 100%;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="img-view">
+            <section id="banner" class="section">
+
+                <div class="list chunk active">
+                    <div class="item" data-index="1">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="2">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event2.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="3">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event3.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="4">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event4.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="5">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event5.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="6">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/event6.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="7">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner-3.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>베스킨라빈스['baskinrobbins']banner</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="8">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/Group4.jpg" alt="img" loading="lazy">
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall'] 광고 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="9">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item" data-index="10">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img2.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="11">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img3.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="12">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img4.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="13">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img5.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="14">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img6.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="15">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/main-img7.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>CLINIQUE['크리니크']상품 배너</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="16">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner-2.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>베스킨라빈스['baskinrobbins']banner</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="17">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner-1.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>베스킨라빈스['baskinrobbins']banner</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section id="logo" class="section">
+                <div class="line"></div>
+                <div class="list chunk">
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            -->
+            <!--
+            <section id="icon" class="section">
+                <div class="line"></div>
+                <div class="list chunk">
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            -->
+            <section id="detail" class="section">
+                <div class="line"></div>
+                <div class="list chunk">
+                    <div class="item" data-index="18">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner-04.png" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>베스킨라빈스['baskinrobbins']상세페이지</h3>
+                                        <p>사용프로그램: photoshop</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                </div>
+
+            </section>
+
+            <section id="promo" class="section">
+                <div class="line"></div>
+                <div class="list chunk">
+                    <div class="item" data-index="19">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner1.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall'] 광고 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="20">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner2.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall'] 광고 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="21">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/banner3.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall'] 광고 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="22">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/Group1.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall']띠 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="23">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/Group2.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall']띠 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item" data-index="24">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/Group3.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>더맨즈몰['The mans mall']띠 배너</h3>
+                                        <p>사용프로그램: Figma</p>
+                                    </a>
+                                    <span>click</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li class="card">
+
+                                <img src="img/photo.jpg" alt="img" loading="lazy">
+
+                                <div class="item-text">
+                                    <a href="#">
+                                        <h3>Revitalizing Night Serum</h3>
+                                        <p>Advanced anti-aging night serum with retinol</p>
+                                    </a>
+                                    <span>Skincare</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                </div>
+                  -->
+            </section>
+
+        </div>
+    </div>
+
+    <div class="popup">
+
+        <button class="close">✕</button>
+
+        <div class="swiper popupSwiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="img/event.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/event2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/event3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/event4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/event5.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/event6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner-3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Group4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/main-img5.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img6.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/main-img7.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/banner-2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/banner-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide detail-slide">
+                    <img src="img/banner-04.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/banner2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/banner3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Group1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Group2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/Group3.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

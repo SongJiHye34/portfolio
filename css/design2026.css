@@ -1,0 +1,858 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../font/THE_GONJURING.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Korea';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}
+
+.main {
+  width: 100%;
+  max-width: 1700px;
+  height: 1600px;
+  margin: 0 auto;
+}
+
+.main .header {
+  width: 1400px;
+  height: 70px;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  background-color: #fff;
+
+}
+
+.header-menu {
+  width: 700px;
+  position: relative;
+  margin-left: 320px;
+}
+
+/*-----------------------
+          메뉴토글
+--------------------------*/
+
+
+
+/* 오버레이 */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+/* 사이드 메뉴 */
+
+
+
+
+#menuBtn {
+  position: relative;
+  top: 10px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 90;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 360px;
+  height: 100vh;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  transition: right 0.3s ease;
+  z-index: 100;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu ul {
+  margin: 80px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.side-menu ul li {
+  height: 70px;
+}
+
+
+
+#closeBtn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 770px) {
+
+.main {
+  min-width: 770px !important;
+  width: 100%;
+  height: auto !important;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.text ul,
+.text li,
+.text h2,
+.text p {
+  text-align: left;
+  width: 100%;
+}
+
+.text > ul:last-child {
+  width: 300px;
+}
+
+.text > ul:last-child > li {
+  width: 120px !important;
+  align-self: stretch;
+}
+
+.text > ul > li.with-border {
+  font-size: 10px;
+  min-width: 120px !important;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header {
+  height: 40px !important;
+  width: 700px !important;
+  min-width: 0 !important;
+}
+.menu{
+  width: 100px !important;
+}
+.menu .menu-bar ul li{
+
+  margin-left: 10px !important;
+}
+.menu .menu-bar ul li a{
+    font-size: 12px !important;
+}
+.mini ul{
+  display: none !important;
+}
+#menuBtn {
+  width: 600px !important;
+  min-width: 0;
+}
+
+.background {
+  display: none;
+}
+
+#sideMenu {
+  width: 100%;
+  right: -150%;
+  padding: 10px;
+  position: absolute !important;
+  box-sizing: border-box;
+}
+
+#sideMenu.active {
+  right: 0;
+}
+.side-menu ul{ 
+  margin: 0 70px 0 70px !important;
+}
+
+#closeBtn {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  z-index: 20;
+  color: #111;
+  font-size: 20px;
+}
+
+#sideMenu ul {
+  gap: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#sideMenu ul li {
+  position: relative;
+  width: 100%;
+  height: 50px !important;
+}
+
+.morph-button {
+  width: 200px !important;
+  height: 70px !important;
+  position: relative;
+  display: flex;
+  left: 10px !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+.morph-button span {
+  position: relative;
+  z-index: 2;
+  display: block;
+  text-align: center;
+}
+
+.morph-button svg.morph {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.img {
+  justify-content: flex-start !important;
+}
+
+.img ul {
+  overflow: hidden;
+  width: 400px !important;
+}
+.img-view{
+  margin-left: 80px !important;
+}
+.content {
+  position: relative;
+  min-width: 1000px !important;
+  display: flex;
+  gap: 180px !important;
+  height: auto !important;
+  flex-direction: column;
+}
+
+.appeal {
+  position: relative;
+  height: auto !important;
+  width: 600px !important;
+  display: flex;
+  margin: 30px !important;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px !important;
+}
+
+.about-box ul:last-child img {
+  display: none;
+}
+
+.skills-box {
+  width: 300px !important;
+  flex: none !important;
+  border-right: none !important;
+  justify-content: flex-end !important;
+}
+
+.skills-box dl dd {
+  font-size: 12px;
+}
+
+.last-content {
+  height: 60px !important;
+}
+
+  .img-view .list {
+    grid-template-columns: repeat(1, 300px) !important; 
+    width: 100%;
+    padding-top: 120px;
+  }
+    .item {
+    width: 100%;
+  }
+
+  .item .card {
+  width: 100%;
+  height: auto !important;
+  }
+  .item-text span{
+    position: relative !important;
+    top: 10px !important;
+
+  }
+  .card img {
+    width: 220px !important;
+    height: 220px !important;
+    object-fit: cover !important;
+  }
+
+  .img-view .list::before {
+    width: 90%;
+  }
+.last-content ul {
+  overflow: hidden;
+  width: 400px !important;
+  margin: 0 !important;
+  gap: 0 !important;
+}
+}
+/**/
+.main .header ul li {
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: 138px;
+  height: 30px;
+}
+
+.main .header ul li a {
+  color: #000000;
+  font-size: 13px;
+
+}
+
+.main .header ul li:hover a {
+  color: #fff;
+}
+
+#sideMenu ul li {
+  height: 70px;
+}
+
+.morph-button {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.morph-button svg.morph path {
+  pointer-events: none;
+}
+
+.morph-button span {
+  position: relative;
+}
+
+.morph-button svg.morph {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  fill: #4A6FA5;
+  transition: fill 0.2s ease;
+}
+
+.morph-button:hover svg.morph {
+  fill: #3B82F6;
+}
+
+
+/**/
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bn38:hover {
+  background-color: #60605e;
+}
+
+/**/
+
+.from {
+  position: relative;
+  min-width: 1400px;
+  max-width: 1720px;
+  height: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 80px;
+  height: 300px;
+
+}
+
+.text>ul {
+  flex: 1;
+  align-items: center;
+
+}
+
+.text>ul:last-child {
+  border-bottom: none;
+  display: flex;
+}
+
+.text>ul>li {
+  flex: none;
+  line-height: 25px;
+}
+
+
+.img {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.img div {
+  width: 100%;
+  height: 100%;
+}
+
+.img div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes scrollHint {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  animation: scrollHint 0.8s ease;
+}
+
+/*=====================좌측메뉴 ============================*/
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  z-index: 33;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* menu-bar */
+.menu .menu-bar {
+  width: 300px;
+  height: 210px;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  background-color: #fff;
+}
+
+
+
+/* 메뉴 리스트 */
+.menu .menu-bar ul li {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  margin-left: 40px;
+  transition: color 0.2s ease;
+
+}
+
+.menu .menu-bar ul li a {
+  font-family: 'Korea';
+  font-size: 14px;
+}
+
+.menu .menu-bar ul li:hover a {
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.menu .menu-bar ul li:nth-child(1) {
+  margin-top: 40px;
+}
+
+/*=====================좌측메뉴===========================*/
+/*버튼*/
+#topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  opacity: 50%;
+  background: #333;
+  color: #fff;
+  font-size: 9px;
+  cursor: pointer;
+  display: none;
+
+  z-index: 1000;
+}
+
+#topBtn:hover {
+  background: #000000;
+}
+
+/*버튼*/
+/*============= 전체보기 =============*/
+.mini {
+  width: 300px;
+  height: 300px;
+  top: 12px;
+  position: relative;
+
+}
+
+
+.mini ul {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  justify-content: center;
+  grid-template-rows: repeat(5, auto);
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mini ul li {
+  width: 100%;
+  height: 70px;
+  background-color: #919191;
+}
+
+.mini ul li:nth-child(n+11) {
+  display: none;
+}
+
+/*============= 전체보기 =============*/
+
+/*============= 상품칸 =============*/
+
+.img-view {
+
+  position: relative;
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+.img-view .list {
+  position: relative;
+  padding-top: 160px;
+  width: 87%;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 330px);
+}
+
+.img-view .list::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 1.5px;
+  background-color: #ECECEC;
+
+}
+
+.item {
+  width: 300px;
+}
+
+.card img {
+  height: 310px;
+   object-fit: contain;
+   width: 100%;
+}
+
+.list .item #item-text {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.item .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+
+.item-text {
+  padding-top: 7px;
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+.item-text h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.item-text p {
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.item-text span {
+  position: absolute;
+  right: 0;
+  top: 50px;
+
+  font-size: 13px;
+  color: #60605e;
+
+  padding: 3px 6px;
+  border: 1px solid #60605e;
+  display: inline-block;
+  text-align: right;
+
+}
+
+.card {
+  position: relative;
+  background: #fff;
+
+  /* ⭐ 기본에 투명 보더 */
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  transition:
+    transform 0.5s ease,
+    border-color 0.5s ease;
+
+}
+
+/* a에 hover하면 card 이동 */
+
+
+
+
+.card:hover {
+  box-shadow: 2px 2px 6px rgba(96, 96, 94, 0.25);
+}
+
+.chunk {
+  display: none;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+
+
+.chunk.active {
+  display: grid;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*============= 상품칸 =============*/
+
+/*============라인===========*/
+.line {
+  width: 80%;
+  height: 1px;
+  position: relative;
+}
+
+
+/*============라인===========*/
+/*팝업카드*/
+.popup{
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+}
+
+.popup.active{
+    display:flex;
+}
+
+.popupSwiper{
+    width:80%;
+    height:90vh;
+}
+
+.popupSwiper img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+
+    background:none;
+    border:none;
+
+    color:#fff;
+    font-size:40px;
+
+    cursor:pointer;
+
+    z-index:100000;
+}
+.swiper-button-next,
+.swiper-button-prev{
+  color: #ff5e00 !important;
+}
+.detail-slide{
+    overflow-y:auto;
+}
+
+.detail-slide img{
+    width:100%;
+    height:auto;
+    object-fit:unset;
+}
+/*팝업카드*/

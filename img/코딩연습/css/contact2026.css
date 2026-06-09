@@ -1,0 +1,164 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+* {
+  user-select: none;
+}
+@font-face {
+     font-family: 'MyFont';
+     src: url('../Font/THE_GONjURING.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face {
+  font-family: 'MenuFont';
+  src: url('../Font/NanumSquare_acL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     height: 100%;
+     overflow: hidden;
+}
+
+.main{
+  width: 100%;
+  max-width: 1700px;
+  height: 2000px;
+  margin: 0 auto;
+}
+.section {
+  min-height: 1600px; 
+}
+.main .toolbar{
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+    position: absolute;
+
+}
+.main .toolbar ul{
+    width: 700px;
+    height: 150px;
+    margin: 30px 40px 0 auto;
+    
+}
+.main .toolbar ul li{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 138px;
+    height: 30px;
+}
+.main .toolbar ul li a{
+    color: #ffffff;
+    font-size: 13px;
+   
+}
+
+/*출처- https://cssbuttons.app */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+.bn38:hover {
+  background-color: #60605e;
+}
+/**/
+
+/*메인*/
+.wed{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 780px;
+    border-top: 1px solid #013C31;
+
+    display: flex;            /* 🔥 핵심 */
+}
+.img-wrap{
+    width: 220px;             /* 고정 */
+    height: 100%;
+    display: flex;
+}
+.box{
+    width: 80px;
+    background-color: #013C31;
+}
+.snow{
+    width: 140px;
+    height: 100%;
+    overflow: hidden;
+}
+.snow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/**/
+/*텍스트*/
+.text{
+    flex: 1;                  /* 🔥 calc 필요 없음 */
+    height: 100%;
+    position: relative;
+    padding: 80px;
+}
+.text ul{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.text ul li{
+    width: 100%;
+    padding: 5px;
+}
+.text ul li h1{
+     font-family: 'MenuFont', sans-serif !important;
+     font-size: 26px;
+     letter-spacing: 1px;
+     text-align: right;
+
+    opacity: 0;
+  transform: translateY(6px);
+  animation: Shadow 2s ease-out forwards;
+}
+
+@keyframes Shadow {
+    to{
+        opacity: 1;
+       transform: translateY(0);
+    }
+}
+.text ul li p {
+   font-family: 'MenuFont', sans-serif !important; 
+
+    opacity: 0;
+  transform: translateY(6px);
+  animation: Shadow 2s ease-out forwards;
+}
+
+
+/*텍스트*/

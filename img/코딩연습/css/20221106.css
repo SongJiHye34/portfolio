@@ -1,0 +1,1142 @@
+@charset "utf-8";
+
+/* === [ 초기화 ] =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*로고*/
+#loge-image {
+  position: absolute;
+  top: 5px;     /* 위에서 20px */
+  left: 40px;    /* 왼쪽에서 20px */
+  z-index: 9999; /* 거의 제일 위 */
+  width: 90px;
+  pointer-events: none; /* 클릭 방지(필요시) */
+}
+
+/*로고*/
+/* === [ 전체 레이아웃 ] ======================== */
+@media (max-width: 1280px) {
+  .big-main,
+  .big-main .menu,
+  .report,
+  .VIBE {
+    width: 95vw;
+    overflow-x: hidden;
+  }
+
+  .big-main .main-menu-bar {
+    margin: 0 auto;
+    width: 95vw;
+    height: 150px;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .big-main .main-menu-bar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+
+  .big-main .main-menu-bar ul li a {
+    font-size: clamp(12px, 1.2vw, 16px);
+    cursor: pointer;
+    display: block;
+  }
+  
+   .LATEST-NEWS {
+    height: auto; /* 콘텐츠에 따라 높이 조절 */
+    padding: 20px; /* 작은 화면에서 여백 확보 */
+  }
+
+}
+
+.big-main {
+  margin: 0 auto;
+  position: relative;
+  width: 99vw;
+  min-height: 100vh; /* 최소 높이 */
+  max-height: 100%; /* 최대 높이 */
+
+}
+
+/* === [ 메뉴 영역 ] ============================ */
+
+.big-main .menu {
+  
+ width: 99vw;
+  height: 1700px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  
+}
+
+
+
+/* === [ 메인 메뉴바 ] ========================== */
+.big-main .main-menu-bar {
+  margin: 0 auto;
+  width: 99vw;
+  height: 100px;
+  position: absolute;
+  z-index: 1000;
+ 
+ 
+}
+
+.big-main .main-menu-bar ul {
+  width: 100%; /* 전체 영역 채우기 */
+  max-width: 1920px; /* 최대 폭 제한 */
+  height: 100px;
+  padding-left: 400px; /* 기본 위치 유지 */
+  float: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.big-main .main-menu-bar ul li {
+  width: 140px;
+  height: 60px;
+  float: left;
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  
+}
+
+.big-main .main-menu-bar ul li a {
+  font-size: clamp(15px, 1vw, 17px);
+  font-weight: 700;
+  cursor: pointer;
+ 
+}
+
+.big-main .main-menu-bar ul li:hover #maintext {
+  transition: 0.2s;
+  color: #ffff;
+  text-align: center;
+}
+
+
+
+.big-main .main-menu-bar.active {
+  background-color: #1D1D1D;
+  opacity: 0.97;
+}
+
+.big-main .main-menu-bar.active a {
+  color: #9EA3A6;
+}
+
+.main-menu-bar .menu-item a {
+  transition: color 0.3s ease;
+}
+
+.main-menu-bar .menu-item.hovered a {
+  color: #fff;
+  font-weight: bold;
+}
+/* === [ 서브 메뉴바 ] ========================== */
+.submenu {
+  position: relative;
+  width: 100%; /* 전체 너비 사용 */
+  max-width: 1920px; /* 기본 최대 너비 */
+  min-width: 1200px; 
+  background-color: #1D1D1D;
+  height: 0px; /* 높이는 콘텐츠에 따라 유동적으로 */
+  overflow: hidden;
+  transition: height 0.5s;
+  z-index: 1000;
+  display: block;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+
+.submenu .sub-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 1370px;
+  height: 150px;
+  padding: 10px;
+  padding-left: 400px;
+  box-sizing: border-box;
+
+ 
+}
+.submenu .sub-btn ul {
+  width: 200px; /* ✅ 고정 너비 */
+  height: 320px;
+  flex-direction: column; /* ✅ 세로 정렬 */
+  gap: 10px; /* 항목 간 간격 */
+  justify-content: flex-start; /* 위에서 아래로 */
+  flex: 1 1 200px; /* 최소 너비 기준으로 줄바꿈 */
+  margin: 10px;
+  padding: 10px;
+ 
+  
+}
+.person .left .left-top,
+.person .left .left-bottom,
+.person .right .top {
+  width: 80vw;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.submenu .sub-btn ul:nth-child(2) {
+ transform: translateX(50px); /* ✅ 오른쪽으로 이동 */
+ padding-left: 127px;
+
+}
+.submenu .sub-btn ul:nth-child(3) {
+  width: 120px;
+  margin-right: -110px; /* ✅ 옆으로 살짝 당기기 */
+
+}
+.submenu .sub-btn ul:nth-child(6) {
+ all: unset;
+  width: 270px;
+}
+.submenu .sub-btn ul li {
+  width: 100%; /* 고정 폭 제거 */
+  height: 20px;
+ 
+  text-align: left;
+  margin-top: 25px;
+  
+  
+}
+
+.submenu .sub-btn ul li a {
+  display: block;
+  width: 150px;
+  word-break: keep-all; /* 단어 끊김 방지 */
+  height: 13px;
+  color: #9EA3A6;
+  font-size: clamp(14px, 1.3vw, 16px);
+  font-weight: bold;
+  white-space: nowrap; /* ✅ 한 줄 유지 */
+  text-overflow: ellipsis; /* 너무 넘치면 ... 처리 */
+}
+
+.submenu .sub-btn ul li a:hover {
+  color: #ffff;
+}
+
+.main-menu-bar ul:hover + .submenu,
+.main-menu-bar .submenu:hover,
+.menu .main-menu-bar ul:hover + .submenu,
+.menu .main-menu-bar .submenu:hover {
+  height: 330px;
+}
+
+/* === [ 아티스트 이미지 영역 ] ================ */
+
+/* === [ 기타 요소 ] ============================ */
+.big-main label {
+  width: 300px;
+  background-color: rgb(86, 86, 86);
+}
+/*메인이미지-레인아웃*/
+
+.person{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+   width: 100%;
+  max-width: 1920px;
+  min-width: 1700px; 
+  margin: 0 auto;
+  padding-top: 150px;
+  position: relative;
+  
+
+}
+
+.person .left,
+.person .right {
+  width: 850px; /* 이걸로 고정! */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.person .left .left-top {
+  margin-left: 30px;
+  width: 800px;
+   height: 700px;
+    overflow: hidden;
+    transition: 0.3s;
+     display: inline-block;
+     margin-bottom: 20px;
+     
+
+}
+.person .left .left-top p{
+  top: 350px;
+  left: 290px;
+  margin: 0 auto;
+  color: #ffff;
+  font-size: 34px;
+  font-weight: bold;
+    position: absolute;
+  z-index: 5; 
+}
+.person .left .left-bottom{
+   margin-left: 30px;
+    width: 800px;
+   height: 700px;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+.person .left .left-bottom p{
+    top: 350px;
+  left: 290px;
+  margin: 0 auto;
+  color: #ffff;
+  font-size: 34px;
+  font-weight: bold;
+    position: absolute;
+  z-index: 5; 
+}
+.person .left .left-top img,
+.person .left .left-bottom img{
+  width: 800px;
+   height: 700px;
+    object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.person .right .top{
+
+    width: 800px;
+    height: 700px;
+    overflow: hidden;
+    transition: 0.3s;
+     margin-bottom: 20px;
+}
+.person .right .top p {
+      top: 350px;
+  left: 260px;
+  margin: 0 auto;
+  color: #ffff;
+  font-size: 34px;
+  font-weight: bold;
+    position: absolute;
+  z-index: 5; 
+}
+.person .right .top img{
+     width: 800px;
+   height: 700px;
+    overflow: hidden;
+    transition: 0.3s;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+.person .left,
+.person .right{
+  float: left;
+  position: relative;
+}
+
+.bottom .bottom-top .bottom-top-left,
+.bottom .bottom-top .bottom-top-right{
+  float: left;
+}
+.bottom .bottom-top .bottom-top-left{
+   width: 420px;
+    height: 370px;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+.bottom .bottom-top .bottom-top-left img{
+   width: 420px;
+    height: 370px;
+    overflow: hidden;
+    transition: 0.3s;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+.bottom .bottom-top .bottom-top-left p{
+   top: 150px;
+  left: 130px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 7; 
+}
+.bottom .bottom-top .bottom-top-right{
+     width: 420px;
+    height: 370px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom .bottom-top .bottom-top-right ul{
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  
+
+}
+.bottom .bottom-top .bottom-top-right ul li{
+  margin-top: 140px;
+  width: 100px;
+  height: 300px;
+  float: left;
+  
+  
+}
+.bottom .bottom-top .bottom-top-right ul li h2{
+  text-align: right;
+}
+.bottom .bottom-top .bottom-top-right ul li span{
+  padding-left: 20px;
+}
+.bottom .bottom-bottom .bottom-bottom-left,
+.bottom .bottom-bottom .bottom-bottom-right{
+  float: left;
+}
+.bottom .bottom-bottom .bottom-bottom-left{
+   width: 420px;
+    height: 370px;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+.bottom .bottom-bottom .bottom-bottom-right{
+       width: 380px;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom .bottom-bottom .bottom-bottom-right span{
+   top: 160px;
+  left: 130px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 34px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 7; 
+}
+.bottom .bottom-bottom .bottom-bottom-right img{
+      width: 380px;
+    height: 330px;
+    overflow: hidden;
+    transition: 0.3s;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+.person .left .left-top a,
+.person .left .left-bottom a,
+.person .right .top a,
+.bottom .bottom-top .bottom-top-left a,
+.bottom .bottom-bottom .bottom-bottom-right a {
+   position: relative; /* 글씨 위치의 기준이 될 부모로 설정 */
+  display: block;
+  overflow: hidden;
+}
+
+.person .left .left-top a::after,
+.person .left .left-bottom a::after,
+.person .right .top a::after,
+.bottom .bottom-top .bottom-top-left a::after,
+.bottom .bottom-bottom .bottom-bottom-right a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 20px solid transparent;
+  transform: scale(1); /* 기본 크기 */
+   transition: transform 0.5s ease;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0); /* 어두워짐 효과 준비 */
+  z-index: 2;
+}
+
+
+
+
+
+.person .left .left-top a:hover::after,
+.person .left .left-bottom a:hover::after,
+.person .right .top a:hover::after,
+.bottom .bottom-top .bottom-top-left a:hover::after,
+.bottom .bottom-bottom .bottom-bottom-right a:hover::after {
+  border: 5px solid rgba(255, 255, 255, 0.6);
+  transform: scale(0.96);
+  background-color: rgba(0, 0, 0, 0.2); /* 어두워짐 효과 추가 가능 */
+  
+}
+.img-hover:hover .caption {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.img-hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1); /* 기본 크기 */
+  transition: transform 0.5s ease;
+}
+.caption{
+  opacity: 0;
+ transition: transform 0.8s ease;
+}
+
+
+.img-hover:hover img {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+  transform: scale(0.96); /* 살짝 줄어듦 */
+}
+.person .right .bottom .bottom-top .bottom-top-right:hover {
+  transition: all 0.1s ease;
+  color: red;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+ 
+}
+.person img,
+.bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-top,
+.left-bottom,
+.right .top {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*메인이미지-레인아웃*/
+
+/*두번째 페이지 슬라이드 스와이프*/
+
+.NEW-ALBUM{
+  top: 120px;
+  margin: 0 auto;
+  
+}
+.NEW-ALBUM ul{
+  position: relative;
+  display: inline-block;
+   width: 100vw;
+  height: 120vh;
+}
+.NEW-ALBUM ul li{
+ 
+  margin: 0 auto;
+  position: relative;
+  width: 90vw;
+}
+.NEW-ALBUM ul li h1{
+  padding-bottom: 70px;
+}
+.slidewrap{
+
+  width: 100%;
+  height: 90vh; 
+  overflow: hidden;
+  position: relative;
+
+}
+.slides{
+    display: flex;
+
+}
+.slides img{
+  overflow: hidden;
+  flex: 0 0 100%;
+   object-fit: fill;
+}
+.slide{
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190vw;
+    height: 90vh;
+    overflow: hidden;
+    object-fit: cover;
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+.slides span{
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  z-index: 8;
+  left: 5%; 
+  transform: translateX(0%);
+  
+
+}
+/* 타이틀 위치 */
+#TEST-A {
+  bottom: 300px;
+}
+
+/* 서브타이틀 위치 */
+#TEST-B {
+  bottom: 210px;
+  font-weight: 800;
+  font-size: 60px;
+}
+
+/*두번째 페이지 슬라이드 스와이프*/
+/*뉴스*/.LATEST-NEWS {
+  position: relative;
+  width: 100%;          /* 부모에 맞춰 자동 너비 */
+  max-width: 1920px;    /* 최대 너비는 유지 */
+  height: 720px;
+  margin: 0 auto;
+ overflow: hidden;     /* 불필요한 넘침 제거 (선택사항) */
+ 
+}
+
+.LATEST-NEWS ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.LATEST-NEWS ul li {
+  width: 100%;
+  max-width: 48%; /* 2개씩 나열 */
+  height: auto;
+  box-sizing: border-box;
+ 
+}
+
+
+
+#NEWS-TEST {
+  font-size: 2rem;
+  font-weight: 900;
+  width: 100%;
+  margin-left: 76px;
+  box-sizing: border-box;
+}
+
+#NEWSTEST-A {
+  width: 100%;
+  height: auto;
+  text-align: right;
+
+}
+#NEWSTEST-A a span{
+   font-size: 1rem;
+  color: #9EA3A6;
+  font-weight: 600;
+  text-align: right;
+ 
+}
+#NEWSTEST-A img{
+  
+  width: 28px;
+  height: 28px;
+ 
+}
+/* ↓ report 영역 고정 px 버전 */
+.report {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  
+}
+
+.report ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.report ul li {
+  flex: 1 1 calc(25% - 20px); /* 4개씩 나열 (여백 고려) */
+  max-width: calc(25% - 20px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+  
+}
+
+#NEWS-TOP {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.report ul li h4 {
+  color: #9EA3A6;
+  margin-top: 17px;
+}
+
+.report ul li img {
+  margin-top: 55px;
+  overflow: hidden;
+  object-fit: cover;
+  width: 380px;
+  height: 280px;
+}
+
+/*뉴스*/
+/*콘서트*/
+.VIBE {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 960px; /* 최소 높이 지정 */
+  z-index: 10; /* VIBE를 더 높은 z-index로 설정 */
+  opacity: 1; /* 완전히 보이도록 설정 */
+}
+
+#up-aos {
+  width: 600px;
+  height: 400px;
+  left: 60px;
+  position: absolute;
+}
+
+#up-aos span {
+
+  display: block;
+  font-size: 100px;
+  line-height: 90px;
+  font-weight: bold;
+}
+#up-aos h4 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: normal;
+}
+#up-aos h6{
+  position: absolute;
+  top: 450px;
+  font-size: 17px;
+  color: #9EA3A6;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#up-aos h6 img{
+  margin-left: 7px;
+ transform: translateY(10%);
+ 
+}
+/*콘서트*/
+/*콘서트모습*/ 
+.SHOW {
+  position: relative;
+  width: 869px;
+  height: 466px;
+  overflow: hidden;
+  left: 700px;
+}
+
+.item-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.item-img .MARK {
+  width: 870px;
+  height: 467px;
+  z-index: 10;
+  position: absolute;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  z-index: 5;
+}
+
+.slideshow.active {
+  opacity: 1;
+  z-index: 6;
+}
+/*콘서트모습*/
+.VIBE .text-item,
+.Company .text-item {
+  position: absolute;
+}
+/*YG 엔터테이먼트 회사 개요*/
+.Company{
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 400px; /* Company 높이 지정 */
+  z-index: 5;  /* Company가 VIBE 아래로 설정 */
+  opacity: 1;  /* Company도 완전히 보이도록 설정 */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.Company .text-item{
+  
+   width: 100%;
+  max-width: 1920px;
+  height: 350px;
+  position: absolute;
+  z-index: 4;
+}
+.Company .text-item{
+  position: relative;
+}
+.Company .text-item:nth-child(2) span,
+.Company .text-item:nth-child(2) h4{
+  top: 160px;
+  left: 320px;
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+.Company .text-item:nth-child(2) span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.Company .text-item:nth-child(2) h4{
+   color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 145px;
+}
+.Company .text-item:nth-child(3) span,
+.Company .text-item:nth-child(3) h4{
+  top: 100px;
+  left: 1140px;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+.Company .text-item:nth-child(3) span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.Company .text-item:nth-child(3) h4{
+   color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 145px;
+}
+.Company .text-item:nth-child(4) span,
+.Company .text-item:nth-child(4) h4{
+  top: 20px;
+  left: 320px;
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+.Company .text-item:nth-child(4) span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.Company .text-item:nth-child(4) h4{
+  color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 145px;
+}
+/*이미지 액팅*/
+
+.Company-img {
+  position: absolute;   /* ← 완전한 배경처럼 뒤로 보내기 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+
+}
+.Close{
+   width: 1920px;
+  height: 1100px;
+  position: absolute;
+  background-color: #000;
+  opacity:  0.5;
+  z-index: 6;
+}
+.Close-left{
+   position: absolute; /* 추가 */
+  top: 0;
+  left: 960px; /* 화면 가운데 */
+  width: 1px; /* 선 굵기 */
+  height: 1100px;
+  background-color: #fff; /* border 대신 배경색으로 선 표현 */
+  opacity: 0.5;
+  z-index: 7;
+}
+.Close-top{
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  opacity:  0.5;
+   width: 960px;
+  height: 550px;
+  z-index: 6;
+}
+.presentation {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+
+.presentation.active {
+  opacity: 1;
+}
+/* 마우스 올라간 텍스트 */
+.Company .text-item.focused span,
+.Company .text-item.focused h4 {
+  opacity: 1;
+}
+
+/* 마우스 안올라간 텍스트 */
+.Company .text-item.unfocused span,
+.Company .text-item.unfocused h4 {
+  opacity: 0.5;
+}
+/*이미지 액팅*/
+/*YG 엔터테이먼트 회사 개요*/
+/*막단*/
+.first{
+ width: 100%;
+ max-width: 1920px;
+  height: 700px;
+  background-color: #1D1D1D;
+  position: relative;
+  
+}
+.first-top{
+  width: calc(100% - 70px);
+  height: 250px;
+  position: relative;
+  display: inline-block;
+ margin-left: 70px;
+}
+.first-top ul{
+  margin-top: 80px;
+  float: left;
+  width: 500px;
+  height: 100%;
+  position: relative;
+}
+
+.first-top ul li{
+  float: left;
+  margin-right: 20px;
+}
+.first-top ul:first-of-type li img {
+
+  width: 45px;
+  height: 45px;
+}
+.back0on{
+  width: 150px;
+  height: 150px;
+  margin-left: 1100px;
+  position: absolute;
+  transform: translateY(-30%);
+}
+.back0on-img{
+  width: 150px;
+  height: 150px;
+}
+.first-bottom{
+  margin-top: 110px;
+   width: calc(100% - 70px);
+  height: 300px;
+  position: relative;
+   margin-left: 70px;
+     display: flex;
+  
+}
+.first-bottom-left,
+.first-bottom-right{
+  height: 300px;
+  width: 100%;
+  position: relative;
+  
+}
+.first-bottom-left ul{
+  position: relative;
+}
+.first-bottom-left ul li a{
+  width: 100px;
+  height: 30px;
+  line-height: 55px;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+
+.first-bottom-left ul li h3{
+  font-size: 17px;
+  color: #727272;
+  font-weight: 500;
+}
+.first-bottom-right ul{
+  margin-left: 350px;
+  width: 100%;
+  height: 80px;
+    text-align: right;
+}
+.pledge{
+  top: 120px;
+   height: 30px;
+  width: 150px;
+  position: relative;
+  float: left;
+  left: 200px;
+}
+.pledge a{
+  height: 30px;
+  width: 100px;
+  color: #727272;
+  font-size: 18px;
+  text-align: right;
+}
+.warning{
+  
+   all: unset;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 30px;
+
+}
+
+.warning h6{
+  color: #727272;
+  font-size: 17px;
+  width: 500px;
+  height: 20px;
+  position: relative;
+    top: 100px;
+text-align: right;
+}
+.warning img{
+  opacity: 0.5;
+  position: absolute;
+  width: 20px;
+  margin-left: 125px;
+  top: 219px;
+}
+/*막단*/
+/*버튼*/
+#topBtn {
+  position: fixed;
+  bottom: 400px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none; /* ← 클릭 막힘 */
+  transition: opacity 0.3s ease;
+}
+#topBtn img{
+  width: 30px;
+  height: 17px;
+  display: block;
+  position: relative;
+  transform: translateX(30%);
+}
+#topBtn.show {
+  opacity: 1;
+  pointer-events: auto; /* ← 클릭 가능하게 바뀜 */
+}
+
+#topBtn {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* 나머지 위와 동일 */
+}
+
+/*버튼*/

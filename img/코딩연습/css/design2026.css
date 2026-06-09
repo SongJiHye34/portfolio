@@ -1,0 +1,345 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+/**/
+@font-face {
+     font-family: 'MyFont';
+     src: url('../Font/Fuzzy-Xmas.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+/*로고폰트*/
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     height: 100%;
+     overflow: hidden;
+}
+
+
+.main{
+  width: 100%;
+  max-width: 1700px;
+  height: 2000px;
+  margin: 0 auto;
+}
+.section {
+  min-height: 1600px; 
+}
+.main .toolbar{
+    width: 100%;
+    height: 150px;
+    z-index: 3;
+    position: absolute;
+
+}
+.main .toolbar ul{
+    width: 700px;
+    height: 150px;
+    margin: 30px 40px 0 auto;
+    
+}
+.main .toolbar ul li{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 138px;
+    height: 30px;
+}
+.main .toolbar ul li a{
+    color: #ffffff;
+    font-size: 13px;
+   
+}
+
+/*출처- https://cssbuttons.app */
+.bn3637 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+}
+.bn38 {
+  border-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+  
+.bn38:hover {
+  background-color: #60605e;
+}
+/**/
+/*=====================좌측메뉴 ============================*/
+.menu-logo{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+}
+.menu-logo ul{
+    width: 100%;
+    margin: 26px 0 0 35px;
+}
+.menu-logo ul li p{
+     font-family: 'MyFont', sans-serif;
+     font-size: 13px;
+     display: inline-block;
+     opacity: 60%;
+     transform: scaleY(2); /* 세로로 늘림 */
+}
+.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  z-index: 33;
+  overflow: hidden;
+  border: 1.5px solid #ECECEC;
+  background-color: #fff;
+}
+
+/* menu-bar */
+.menu .menu-bar {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  display: grid;
+  gap: 20px;
+  background-color: #fff;
+  margin: 80px 0 0 0;
+}
+
+/* 위·아래 짤막한 라인 */
+.menu .menu-bar::before,
+.menu .menu-bar::after {
+  content: "";
+  position: absolute;
+  left: 20px;          /* ← 좌우 여백 */
+  right: 20px;
+  height: 1.5px;
+  background-color: #ECECEC;
+}
+
+.menu .menu-bar::before {
+  top: 0;
+}
+
+.menu .menu-bar::after {
+  bottom: 0;
+}
+
+/* 메뉴 리스트 */
+.menu .menu-bar ul li {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  margin-left: 40px;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.menu .menu-bar ul li:hover a {
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.menu .menu-bar ul li:nth-child(1) {
+  margin-top: 40px;
+}
+/*=====================좌측메뉴===========================*//*버튼*/
+#topBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  opacity: 50%;
+  background: #333;
+  color: #fff;
+  font-size: 9px;
+  cursor: pointer;
+  display: none; /* 처음엔 숨김 */
+  z-index: 1000;
+}
+
+#topBtn:hover {
+  background: #000000;
+}
+/*버튼*/
+/*============= 전체보기 =============*/
+.mini {
+  width: 300px;
+  height: 300px;
+  top: 12px;
+  position: relative;
+
+}
+
+/* 핵심 */
+.mini ul {
+  display: grid;                            
+   grid-template-columns: repeat(3, 70px);
+  justify-content: center;
+  grid-template-rows: repeat(5, auto);     
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mini ul li {
+   width: 100%;   
+  height: 70px;
+  background-color: #919191;
+}
+.mini ul li:nth-child(n+11) {
+  display: none;
+}
+/*============= 전체보기 =============*/
+
+/*============= 상품칸 =============*/
+
+.img-view{
+    
+     position: relative;
+     width: calc(100% - 300px);
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 300px;
+}
+.img-view .list{
+    position: relative;  
+    padding-top: 160px;
+    width: 87%;
+    height: auto;
+    margin: 0 auto;                         
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 330px);
+}
+.img-view .list::before{
+   content: "";
+    position: absolute;
+    top: 80px;                 /* list 안에서 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 1.5px;
+    background-color: #ECECEC;    /* ⭐ border ❌ */
+}
+.img-view .list .item{
+    width: 300px;   
+    height: 400px;
+}
+.img-view .list .item ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.list .item #item-text{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.item .card{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.item .card img{
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 20%;
+}
+.item-text{
+    padding-top: 7px;
+ width: 100%;
+ height: 90px;
+  position: relative;
+}
+.item-text h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.item-text p{
+    font-size: 13px;
+    font-weight: 200;
+}
+.item-text span{
+      position: absolute;
+        right: 0;
+        top: 50px;
+
+        font-size: 13px;
+        color: #60605e;
+
+        padding: 3px 6px;
+        border: 1px solid #60605e;
+        display: inline-block;
+        text-align: right;
+    
+}
+.card {
+ position: relative;
+  background: #fff;
+
+  /* ⭐ 기본에 투명 보더 */
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+
+  transition: 
+    transform 0.5s ease,
+    border-color 0.5s ease;
+  
+}
+/* a에 hover하면 card 이동 */
+
+
+
+
+.card:hover {
+  box-shadow: 2px 2px 6px rgba(96,96,94,0.25);
+}
+.chunk {
+    display: none;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.chunk.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chunk.active {
+  display: grid; /* 기존 list 레이아웃 유지 */
+}
+/*============= 상품칸 =============*/
+
+/*============라인===========*/
+.line {
+  width: 80%;
+  height: 1px;
+  position: relative;
+}
+
+
+/*============라인===========*/
